@@ -73,7 +73,7 @@ color:var(--gold);
 }
 
 .hero{
-height:100vh;
+min-height:100vh;
 background:
 linear-gradient(
 rgba(8,22,51,.55),
@@ -120,8 +120,15 @@ max-width:800px;
 margin:auto;
 }
 
+.hero-credential-line{
+margin-top:20px;
+font-weight:600;
+font-size:1rem;
+color:var(--white);
+}
+  
 .hero-credentials{
-margin-top:25px;
+margin-top:125px;
 font-weight:600;
 color:var(--gold);
 text-shadow:
@@ -166,7 +173,7 @@ text-align:center;
 
 .about-grid{
 display:grid;
-grid-template-columns:300px 1fr;
+grid-template-columns:400px 1fr;
 gap:40px;
 align-items:start;
 }
@@ -174,6 +181,7 @@ align-items:start;
 .about-grid img{
 width:100%;
 border-radius:15px;
+border:3px solid var(--gold);
 }
 
 .card{
@@ -257,6 +265,10 @@ Study. Engage. Serve.
 Building a Foundation in Public Affairs, Civic Engagement, and Public Service.
 </div>
 
+<div class="hero-credential-line">
+Penn State Political Science Graduate • Published Photographer
+</div>
+  
 <div class="hero-credentials">
 Research • Communication • Initiative • Determination
 </div>
