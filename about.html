@@ -86,6 +86,47 @@ border:2px solid rgba(178,34,34,.75);
 border-left:6px solid var(--gold);
 }
 
+.about-layout{
+display:grid;
+grid-template-columns:300px 1fr;
+gap:40px;
+align-items:start;
+}
+
+.about-photo img{
+width:100%;
+border-radius:15px;
+border-left:4px solid var(--gold);
+border-top:1px solid var(--red);
+border-right:1px solid var(--red);
+border-bottom:1px solid var(--red);
+}
+
+.quote{
+margin-top:20px;
+font-style:italic;
+font-size:1.1rem;
+color:var(--gold);
+text-align:center;
+}
+
+@media(max-width:900px){
+
+.about-layout{
+grid-template-columns:1fr;
+}
+
+.about-photo{
+max-width:300px;
+margin:auto;
+}
+
+}
+
+.card p{
+margin-bottom:25px;
+}
+  
 .card p{
 margin-bottom:25px;
 }
@@ -133,8 +174,19 @@ Edward A. Wilson
 About Me
 </h1>
 
-<div class="card">
+<div class="about-layout">
 
+<div class="about-photo">
+
+<img src="images/about-portrait.jpg" alt="Edward A. Wilson">
+
+<p class="quote">
+"Study. Engage. Serve."
+</p>
+
+</div>
+
+  
 <p>
 Born and raised in Philadelphia, Pennsylvania, I spent more than thirty years in the city before relocating to Northeastern Pennsylvania.
 </p>
