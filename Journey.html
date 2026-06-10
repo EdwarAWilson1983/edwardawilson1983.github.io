@@ -1,19 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Journey | Ed Wilson</title>
+
+<style>
+
+:root{
+    --navy:#0B1F3A;
+    --navy-light:#132B4D;
+    --gold:#D4AF37;
+    --red:#A61E22;
+    --white:#F5F5F5;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:var(--navy);
+    color:var(--white);
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:1.7;
+}
+
+/* ==========================
+   NAVIGATION
+========================== */
+
+nav{
+    background:#08162b;
+    border-bottom:3px solid var(--red);
+    padding:20px;
+}
+
+.nav-container{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:var(--gold);
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.journey-hero{
+    text-align:center;
+    padding:120px 20px 80px;
+}
+
+.journey-hero h1{
+    font-size:4rem;
+    color:var(--gold);
+    margin-bottom:20px;
+}
+
+.journey-hero p{
+    max-width:900px;
+    margin:auto;
+    font-size:1.2rem;
+}
+
+/* ==========================
+   GENERAL SECTIONS
+========================== */
+
+.section{
+    max-width:1100px;
+    margin:auto;
+    padding:80px 25px;
+}
+
+.section-title{
+    color:var(--gold);
+    font-size:2.5rem;
+    margin-bottom:15px;
+}
+
+.section-divider{
+    width:120px;
+    height:4px;
+    background:var(--red);
+    margin-bottom:40px;
+}
+
+.story-text{
+    font-size:1.1rem;
+}
+
+/* ==========================
+   CARDS
+========================== */
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:var(--navy-light);
+    border:2px solid var(--gold);
+    border-radius:12px;
+    padding:25px;
+}
+
+.card h3{
+    color:var(--gold);
+    margin-bottom:15px;
+}
+
+/* ==========================
+   TIMELINE
+========================== */
+
+.timeline{
+    position:relative;
+    max-width:900px;
+    margin:auto;
+}
+
+.timeline::before{
+    content:"";
+    position:absolute;
+    left:50%;
+    width:4px;
+    background:var(--gold);
+    top:0;
+    bottom:0;
+    transform:translateX(-50%);
+}
+
+.timeline-item{
+    position:relative;
+    width:50%;
+    padding:20px 40px;
+}
+
+.timeline-item:nth-child(odd){
+    left:0;
+    text-align:right;
+}
+
+.timeline-item:nth-child(even){
+    left:50%;
+}
+
+.timeline-item::after{
+    content:"";
+    position:absolute;
+    width:20px;
+    height:20px;
+    background:var(--red);
+    border:3px solid var(--gold);
+    border-radius:50%;
+    top:28px;
+}
+
+.timeline-item:nth-child(odd)::after{
+    right:-12px;
+}
+
+.timeline-item:nth-child(even)::after{
+    left:-12px;
+}
+
+.timeline-year{
+    color:var(--gold);
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+/* ==========================
+   FUTURE SECTION
+========================== */
+
+.future-section{
+    text-align:center;
+}
+
+/* ==========================
+   CTA
+========================== */
+
+.cta{
+    text-align:center;
+    padding:100px 20px;
+    background:#08162b;
+    border-top:3px solid var(--red);
+}
+
+.cta h2{
+    color:var(--gold);
+    margin-bottom:20px;
+}
+
+.cta-button{
+    display:inline-block;
+    margin-top:25px;
+    padding:15px 35px;
+    background:var(--gold);
+    color:var(--navy);
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.cta-button:hover{
+    transform:translateY(-3px);
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:768px){
+
+.journey-hero h1{
+    font-size:2.8rem;
+}
+
+.timeline::before{
+    left:25px;
+}
+
+.timeline-item{
+    width:100%;
+    left:0 !important;
+    text-align:left !important;
+    padding-left:70px;
+}
+
+.timeline-item::after{
+    left:15px !important;
+}
+
+}
+
+</style>
+
+</head>
 
 <body>
 
-<!-- HERO -->
+<nav>
+    <div class="nav-container">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="journey.html">Journey</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
 
 <section class="journey-hero">
+
     <h1>My Journey</h1>
+
     <p>
         The experiences, ideas, and milestones that shaped my commitment
         to public affairs, civic engagement, political communication,
         and public service.
     </p>
+
 </section>
-
-
-<!-- ORIGIN STORY -->
 
 <section class="section">
 
@@ -26,9 +295,6 @@
 
 </section>
 
-
-<!-- EDUCATION -->
-
 <section class="section">
 
     <h2 class="section-title">Education & Learning</h2>
@@ -38,9 +304,9 @@
 
         <h3>Political Science</h3>
 
-        <p>[University Name]</p>
+        <p>[UNIVERSITY NAME]</p>
 
-        <p>[Years Attended]</p>
+        <p>[YEARS ATTENDED]</p>
 
         <p>
             Through formal study, I developed a deeper understanding of
@@ -52,9 +318,6 @@
 
 </section>
 
-
-<!-- PUBLIC AFFAIRS INTERESTS -->
-
 <section class="section">
 
     <h2 class="section-title">Areas of Interest</h2>
@@ -64,40 +327,27 @@
 
         <div class="card">
             <h3>Public Affairs</h3>
-            <p>
-                Exploring how policy, communication, and advocacy shape
-                public outcomes.
-            </p>
+            <p>Exploring how policy, communication, and advocacy shape public outcomes.</p>
         </div>
 
         <div class="card">
             <h3>Political Communication</h3>
-            <p>
-                Translating complex political issues into accessible
-                public conversations.
-            </p>
+            <p>Translating complex political issues into accessible public conversations.</p>
         </div>
 
         <div class="card">
             <h3>Civic Engagement</h3>
-            <p>
-                Encouraging informed participation in democratic life.
-            </p>
+            <p>Encouraging informed participation in democratic life.</p>
         </div>
 
         <div class="card">
             <h3>Advocacy</h3>
-            <p>
-                Examining how organizations and citizens influence policy.
-            </p>
+            <p>Examining how organizations and citizens influence public policy.</p>
         </div>
 
     </div>
 
 </section>
-
-
-<!-- PROJECTS -->
 
 <section class="section">
 
@@ -107,44 +357,23 @@
     <div class="card-grid">
 
         <div class="card">
-
             <h3>Political Podcast</h3>
-
-            <p>
-                Research-driven political history and public affairs content
-                designed to make complex topics understandable.
-            </p>
-
+            <p>Research-driven political history and public affairs content.</p>
         </div>
 
         <div class="card">
-
             <h3>Personal Website</h3>
-
-            <p>
-                A platform for sharing ideas, projects, and public affairs
-                interests while building a professional online presence.
-            </p>
-
+            <p>A platform for sharing ideas, projects, and public affairs interests.</p>
         </div>
 
         <div class="card">
-
             <h3>Research & Writing</h3>
-
-            <p>
-                Developing skills in analysis, policy communication,
-                and public engagement.
-            </p>
-
+            <p>Developing skills in analysis, policy communication, and public engagement.</p>
         </div>
 
     </div>
 
 </section>
-
-
-<!-- IDEAS -->
 
 <section class="section">
 
@@ -154,44 +383,23 @@
     <div class="card-grid">
 
         <div class="card">
-
             <h3>Civic Engagement</h3>
-
-            <p>
-                Strong communities are built when informed citizens
-                actively participate in public life.
-            </p>
-
+            <p>Strong communities are built when informed citizens actively participate.</p>
         </div>
 
         <div class="card">
-
             <h3>Public Service</h3>
-
-            <p>
-                Government functions best when it remains accountable,
-                responsive, and transparent.
-            </p>
-
+            <p>Government functions best when accountable, responsive, and transparent.</p>
         </div>
 
         <div class="card">
-
             <h3>Communication</h3>
-
-            <p>
-                Political issues should be explained clearly, honestly,
-                and accessibly.
-            </p>
-
+            <p>Political issues should be explained clearly, honestly, and accessibly.</p>
         </div>
 
     </div>
 
 </section>
-
-
-<!-- TIMELINE -->
 
 <section class="section">
 
@@ -217,23 +425,17 @@
 
         <div class="timeline-item">
             <div class="timeline-year">2026</div>
-            <p>Launched website and podcast initiative.</p>
+            <p>Launched personal website and podcast initiative.</p>
         </div>
 
         <div class="timeline-item">
             <div class="timeline-year">Future</div>
-            <p>
-                Continued growth in advocacy, public affairs,
-                communications, and civic engagement.
-            </p>
+            <p>Continued growth in advocacy, communications, and public affairs.</p>
         </div>
 
     </div>
 
 </section>
-
-
-<!-- CHALLENGES -->
 
 <section class="section">
 
@@ -241,23 +443,16 @@
     <div class="section-divider"></div>
 
     <p class="story-text">
+        Every meaningful journey includes challenges, setbacks, and opportunities for growth.
 
-        Every meaningful journey includes challenges, setbacks,
-        and opportunities for growth.
+        Through education, projects, and personal development, I have learned
+        the importance of persistence, adaptability, and continuous learning.
 
-        Through education, projects, and personal development,
-        I have learned the importance of persistence,
-        adaptability, and continuous learning.
-
-        These lessons continue to shape my approach to
-        public affairs and civic engagement.
-
+        These lessons continue to shape how I engage with public affairs,
+        communication, and civic engagement.
     </p>
 
 </section>
-
-
-<!-- FUTURE -->
 
 <section class="section future-section">
 
@@ -268,8 +463,8 @@
 
         I am continuing to develop my expertise in public affairs,
         political communication, and civic engagement while exploring
-        opportunities in advocacy, strategic communications,
-        public service, policy work, and political engagement.
+        opportunities in advocacy, strategic communications, public service,
+        policy work, and political engagement.
 
         My goal is not simply to understand public affairs,
         but to contribute meaningfully to the conversations
@@ -278,9 +473,6 @@
     </p>
 
 </section>
-
-
-<!-- CTA -->
 
 <section class="cta">
 
@@ -299,3 +491,4 @@
 </section>
 
 </body>
+</html>
