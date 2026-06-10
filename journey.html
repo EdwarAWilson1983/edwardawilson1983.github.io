@@ -10,11 +10,12 @@
 <style>
 
 :root{
-    --navy:#0B1F3A;
-    --navy-light:#132B4D;
-    --gold:#D4AF37;
-    --red:#A61E22;
-    --white:#F5F5F5;
+    --navy:#081633;
+--navy2:#10234f;
+--gold:#d4af37;
+--white:#ffffff;
+--light:#d9dde7;
+--accent-red:#9e1b32;
 }
 
 *{
@@ -35,17 +36,21 @@ body{
 ========================== */
 
 nav{
-    background:#08162b;
-    border-bottom:3px solid var(--red);
-    padding:20px;
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(8,22,51,.95);
+    padding:20px 40px;
+    z-index:1000;
+    border-bottom:1px solid rgba(212,175,55,.25);
 }
 
 .nav-container{
+     display:flex;
+    justify-content:space-between;
+    align-items:center;
     max-width:1200px;
     margin:auto;
-    display:flex;
-    justify-content:center;
-    gap:40px;
 }
 
 nav a{
@@ -70,8 +75,18 @@ nav a:hover{
 
 .journey-hero h1{
     font-size:4rem;
-    color:var(--gold);
+    color(white);
     margin-bottom:20px;
+}
+    .gold-line{
+    width:220px;
+    height:4px;
+    background:var(--gold);
+    margin:25px auto;
+}
+    text-shadow:
+    1px 1px 0 var(--gold),
+    2px 2px 8px rgba(0,0,0,.4); 
 }
 
 .journey-hero p{
@@ -91,17 +106,17 @@ nav a:hover{
 }
 
 .section-title{
-    color:var(--gold);
+     color:white;
     font-size:2.5rem;
     margin-bottom:15px;
+    text-align:center;
 }
 
 .section-divider{
-    width:120px;
+     width:350px;
     height:4px;
-    background:var(--red);
-    margin-bottom:40px;
-}
+    background:var(--gold);
+    margin:0 auto 40px auto;
 
 .story-text{
     font-size:1.1rem;
@@ -118,10 +133,12 @@ nav a:hover{
 }
 
 .card{
-    background:var(--navy-light);
+      background:var(--navy2);
+    padding:35px;
+    border-radius:15px;
+
     border:2px solid var(--gold);
-    border-radius:12px;
-    padding:25px;
+    border-left:8px solid var(--accent-red);
 }
 
 .card h3{
@@ -168,10 +185,10 @@ nav a:hover{
 .timeline-item::after{
     content:"";
     position:absolute;
-    width:20px;
-    height:20px;
+    width:26px;
+    height:26px;
     background:var(--red);
-    border:3px solid var(--gold);
+    border:4px solid var(--gold);
     border-radius:50%;
     top:28px;
 }
@@ -206,7 +223,7 @@ nav a:hover{
     text-align:center;
     padding:100px 20px;
     background:#08162b;
-    border-top:3px solid var(--red);
+    border-top:2px solid var(--gold);
 }
 
 .cta h2{
@@ -276,7 +293,9 @@ nav a:hover{
 
     <h1>My Journey</h1>
 
-    <p>
+        <div class="gold-line"></div>
+
+       <p>
         The experiences, ideas, and milestones that shaped my commitment
         to public affairs, civic engagement, political communication,
         and public service.
