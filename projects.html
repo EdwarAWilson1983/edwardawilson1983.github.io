@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | Edward A. Wilson</title>
+
+<style>
+:root{
+--navy:#081633;
+--navy2:#10234f;
+--gold:#d4af37;
+--white:#ffffff;
+--accent-red:#9e1b32;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+background:var(--navy);
+color:var(--white);
+font-family:Arial, Helvetica, sans-serif;
+line-height:1.8;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(8,22,51,.95);
+padding:20px 40px;
+z-index:1000;
+border-bottom:1px solid rgba(212,175,55,.25);
+}
+
+.nav-container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+max-width:1200px;
+margin:auto;
+}
+
+.logo{
+color:var(--gold);
+font-weight:700;
+font-size:1.2rem;
+}
+
+.nav-links{
+display:flex;
+gap:25px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+font-weight:600;
+}
+
+.nav-links a:hover{
+color:var(--accent-red);
+}
+
+.hero{
+text-align:center;
+padding:180px 20px 120px;
+}
+
+.hero h1{
+font-size:4rem;
+text-shadow:1px 1px 0 var(--gold),2px 2px 8px rgba(0,0,0,.4);
+}
+
+.gold-line{
+width:220px;
+height:4px;
+background:var(--gold);
+margin:25px auto;
+}
+
+.hero p{
+max-width:850px;
+margin:auto;
+font-size:1.2rem;
+}
+
+.section{
+max-width:1100px;
+margin:auto;
+padding:80px 25px;
+}
+
+.section-title{
+font-size:2.5rem;
+text-align:center;
+margin-bottom:15px;
+}
+
+.section-divider{
+width:350px;
+height:4px;
+background:var(--gold);
+margin:0 auto 40px auto;
+}
+
+.card{
+background:var(--navy2);
+padding:35px;
+border-radius:15px;
+border:2px solid var(--accent-red);
+border-left:8px solid var(--gold);
+}
+
+.featured-layout{
+display:grid;
+grid-template-columns:340px 1fr;
+gap:40px;
+align-items:start;
+}
+
+.project-logo{
+width:100%;
+max-width:320px;
+display:block;
+margin:auto;
+}
+
+.badge{
+display:inline-block;
+padding:8px 14px;
+border:1px solid var(--gold);
+border-radius:999px;
+color:var(--gold);
+font-weight:600;
+margin-bottom:15px;
+}
+
+.brand-tagline{
+font-style:italic;
+color:var(--gold);
+margin-top:8px;
+text-align:center;
+}
+
+.tags{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+margin:15px 0 20px;
+}
+
+.tag{
+padding:6px 12px;
+border:1px solid var(--gold);
+border-radius:25px;
+}
+
+.btn-group{
+margin-top:25px;
+display:flex;
+gap:12px;
+flex-wrap:wrap;
+}
+
+.btn{
+background:var(--gold);
+color:black;
+padding:12px 20px;
+border-radius:8px;
+text-decoration:none;
+font-weight:700;
+}
+
+.card-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.status-board h3{
+color:var(--gold);
+margin-top:15px;
+}
+
+.status-board ul{
+margin-left:20px;
+}
+
+.quote{
+text-align:center;
+font-style:italic;
+font-size:2rem;
+line-height:1.6;
+color:var(--gold);
+max-width:950px;
+margin:120px auto 40px auto;
+padding:0 25px;
+}
+
+.quote-author{
+display:block;
+margin-top:15px;
+color:white;
+font-style:normal;
+font-size:1rem;
+}
+
+.logo-footer{
+text-align:center;
+margin:40px auto 80px auto;
+}
+
+.logo-footer img{
+width:180px;
+max-width:80%;
+}
+
+.logo-footer p{
+color:var(--gold);
+letter-spacing:1px;
+margin-top:15px;
+font-weight:600;
+}
+
+footer{
+padding:40px;
+text-align:center;
+border-top:1px solid rgba(212,175,55,.25);
+}
+
+@media(max-width:900px){
+.hero h1{font-size:2.8rem;}
+.featured-layout{grid-template-columns:1fr;}
+.nav-container{flex-direction:column;gap:10px;}
+.nav-links{flex-wrap:wrap;justify-content:center;}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="nav-container">
+<div class="logo">Edward A. Wilson</div>
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="journey.html">Journey</a>
+<a href="principles.html">Principles</a>
+<a href="contact.html">Contact</a>
+</div>
+</div>
+</nav>
+
+<section class="hero">
+<h1>Projects & Initiatives</h1>
+<div class="gold-line"></div>
+<p>
+Building platforms, content, and civic projects that encourage informed citizenship,
+constructive dialogue, and public engagement.
+</p>
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Current Focus</h2>
+<div class="section-divider"></div>
+
+<div class="card">
+
+<div class="featured-layout">
+
+<div>
+<img src="images/pamphleteer-logo.png" alt="The Pamphleteer Logo" class="project-logo">
+<p class="brand-tagline">
+Where History Meets Politics In Search of Truth
+</p>
+</div>
+
+<div>
+
+<div class="badge">Active Development</div>
+
+<h2>The Pamphleteer</h2>
+
+<div class="tags">
+<span class="tag">Political Media</span>
+<span class="tag">Civic Education</span>
+<span class="tag">Public Affairs</span>
+<span class="tag">Podcast</span>
+</div>
+
+<p>
+The Pamphleteer is a political media and civic education initiative focused on helping
+citizens better understand government, public policy, political history, and current events
+through accessible content and thoughtful discussion.
+</p>
+
+<p>
+Inspired by the historic pamphleteers who helped shape public debate, the project seeks to
+combine research, communication, and civic education in a modern audio format.
+</p>
+
+<br>
+
+<h3>Current Progress</h3>
+
+<ul>
+<li>Introductory episode completed</li>
+<li>Brand identity and artwork completed</li>
+<li>Podcast launch in progress</li>
+<li>Dedicated website planned</li>
+</ul>
+
+<div class="btn-group">
+<a href="#" class="btn">Listen to Intro Episode</a>
+<a href="#" class="btn">Learn More</a>
+</div>
+
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Project Status Board</h2>
+<div class="section-divider"></div>
+
+<div class="card status-board">
+
+<h3>CURRENTLY BUILDING</h3>
+<ul>
+<li>The Pamphleteer</li>
+</ul>
+
+<h3>EXPLORING</h3>
+
+<div style="margin-left:20px;">
+
+<p>
+<strong>Higher Ideals?</strong><br>
+<span style="opacity:.85;">
+Long-form political commentary and civic analysis.
+</span>
+</p>
+
+<br>
+
+<p>
+<strong>Civic Research & Analysis</strong><br>
+<span style="opacity:.85;">
+Accessible policy and government explainers.
+</span>
+</p>
+
+</div>
+
+<h3>INTERESTED IN PURSUING</h3>
+<ul>
+<li>Community Engagement</li>
+<li>Public Affairs Writing</li>
+<li>Advocacy & Campaign Work</li>
+<li>Non-Profit Work</li>
+</ul>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Emerging Projects</h2>
+<div class="section-divider"></div>
+
+<div class="card-grid">
+
+<div class="card">
+<div class="badge">Exploring</div>
+<h3>Higher Ideals?</h3>
+<p>
+A prospective long-form writing project focused on public policy, political philosophy,
+current events, and democratic governance.
+</p>
+</div>
+
+<div class="card">
+<div class="badge">Future Initiative</div>
+<h3>Civic Research & Analysis</h3>
+<p>
+Accessible research briefs and explanatory content designed to help citizens better understand
+policy, institutions, and political processes.
+</p>
+</div>
+
+<div class="card">
+<div class="badge">Future Initiative</div>
+<h3>Community Engagement</h3>
+<p>
+Participation in civic organizations, public forums, educational initiatives,
+and community-focused projects.
+</p>
+</div>
+
+<div class="card">
+<div class="badge">Long-Term Interest</div>
+<h3>Public Affairs & Advocacy</h3>
+<p>
+A long-term interest in contributing to advocacy efforts, campaigns,
+communications, and public affairs initiatives.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Looking Forward</h2>
+<div class="section-divider"></div>
+
+<div class="card">
+
+<p>
+While The Pamphleteer is my primary focus today, I view it as the beginning of a broader
+commitment to civic education, public affairs, and public service.
+</p>
+
+<br>
+
+<p>
+The projects listed here represent both active work and future areas of exploration as I continue
+developing the skills, experience, and opportunities necessary to contribute meaningfully to public life.
+</p>
+
+</div>
+
+</section>
+
+<div class="quote">
+“An investment in knowledge pays the best interest.”
+<span class="quote-author">— Benjamin Franklin</span>
+</div>
+
+<div class="logo-footer">
+<img src="images/pamphleteer-logo.png" alt="The Pamphleteer">
+<p>WHERE HISTORY MEETS POLITICS IN SEARCH OF TRUTH</p>
+</div>
+
+<footer>
+<p>Pennsylvania • Public Affairs • Civic Engagement</p>
+</footer>
+
+</body>
+</html>
