@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Pamphleteer V13</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#d8b45f;--paper:#eadfc8;--navy:#06101d;--maroon:#6f1d2a;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--navy);color:var(--paper);font-family:'Cormorant Garamond',serif;}
+
+#trailer{
+position:fixed;inset:0;background:#000;
+display:flex;align-items:center;justify-content:center;
+z-index:9999;
+}
+#trailerText{
+font-family:'Cinzel',serif;
+font-size:clamp(2rem,4vw,4rem);
+color:var(--gold);
+max-width:900px;
+width:90%;
+margin:0 auto;
+text-align:center;
+line-height:1.3;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+position:relative;
+background:radial-gradient(circle at center,rgba(216,180,95,.12),transparent 50%),#06101d;
+}
+.watermark{
+position:absolute;
+font-family:'Cinzel',serif;
+font-size:18vw;
+opacity:.05;
+color:var(--gold);
+transform:rotate(-14deg);
+white-space:nowrap;
+}
+.hero h1{
+font-family:'Cinzel',serif;
+font-size:clamp(4rem,10vw,8rem);
+color:var(--gold);
+margin:.15em 0;
+}
+
+.container{max-width:1500px;margin:auto;padding:24px}
+.panel{border:1px solid rgba(216,180,95,.45);padding:24px;margin-bottom:20px;background:rgba(255,255,255,.02)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+h2,h3{font-family:'Cinzel',serif;color:var(--gold);text-align:center}
+.audio-card{display:grid;grid-template-columns:240px 1fr;gap:20px;align-items:center}
+.cover img{max-width:100%;border:1px solid rgba(216,180,95,.5)}
+.arc{border-left:3px solid var(--gold);padding-left:18px;margin:18px 0}
+
+.timeline{position:relative;padding:30px 0;min-height:700px}
+.timeline:before{content:'';position:absolute;left:50%;top:0;bottom:0;width:5px;background:var(--gold)}
+.ms{position:relative;width:38%;margin-bottom:40px}
+.left{text-align:right}
+.right{margin-left:62%}
+.card{border:1px solid rgba(216,180,95,.4);padding:12px;background:rgba(0,0,0,.15)}
+.marker{position:absolute;top:8px;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--maroon);border:3px solid var(--gold);font-size:24px}
+.left .marker{right:-98px}
+.right .marker{left:-98px}
+.left:after,.right:after{content:'';position:absolute;top:35px;width:70px;height:3px;background:var(--gold)}
+.left:after{right:-70px}
+.right:after{left:-70px}
+.current .marker{box-shadow:0 0 0 8px rgba(216,180,95,.18)}
+.future .marker{background:transparent}
+.quill .marker{background:var(--gold);color:#111}
+
+.footer{background:#d8c29a;text-align:center;padding:60px 20px}
+.footer h2{color:var(--maroon);font-family:'Cinzel',serif;font-size:clamp(2rem,4vw,4rem)}
+.return-home{
+display:inline-block;margin-top:25px;padding:12px 28px;
+border:1px solid var(--gold);background:#06101d;color:var(--gold);
+text-decoration:none;font-family:'Cinzel',serif;
+}
+
+@media(max-width:900px){
+.grid{grid-template-columns:1fr}
+.audio-card{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div id="trailer"><div id="trailerText"></div></div>
+
+<section class="hero">
+<div class="watermark">WE THE PEOPLE</div>
+<div>
+<div>A PROJECT OF EDWARD A. WILSON</div>
+<h1>THE PAMPHLETEER</h1>
+<div>POLITICAL HISTORY • PUBLIC AFFAIRS • CIVIC EDUCATION</div>
+<p>Where History Meets Politics In Search of Truth</p>
+</div>
+</section>
+
+<div class="container">
+<div class="panel">
+<h2>THE FIRST PUBLICATION</h2>
+<div class="audio-card">
+<div class="cover"><img src="images/pamphleteer-cover.jpeg" alt="The Pamphleteer Cover"></div>
+<div>
+<h3>Introductory Episode</h3>
+<p>An introduction to the mission, vision, and future of The Pamphleteer.</p>
+<audio controls style="width:100%"><source src="Assets/Audio/pamphleteer-intro.mp3"></audio>
+</div>
+</div>
+</div>
+
+<div class="grid">
+<div class="panel">
+<h2>SEASON ONE</h2>
+<p style="text-align:center">A Study of Power, Information, and Democracy<br>25 Episodes Planned • Introductory Episode Published</p>
+
+<div class="arc"><h3>POWER & POLITICAL REALIGNMENT</h3><ul><li>American Power and Party Realignment</li><li>The Left vs Right in the 21st Century</li></ul></div>
+<div class="arc"><h3>INSTITUTIONS & TRUST</h3><ul><li>Who Controls What You Believe?</li><li>When Institutions Fail</li><li>The Collapse of Trust</li></ul></div>
+<div class="arc"><h3>INFORMATION & REALITY</h3><ul><li>Manufacturing Reality</li><li>The Collapse of Shared Reality</li><li>The Illusion of Choice</li><li>Manufactured Reality</li></ul></div>
+<div class="arc"><h3>LATER ARCS</h3><ul><li>The Incentive Layer</li><li>Money in Politics</li><li>The Manufactured Narrative</li><li>Reality, Curated</li><li>Structured Consensus</li><li>Engineering Belief</li><li>The Rewired Mind</li><li>The Algorithm Decides</li><li>The Price of Stability I–III</li><li>The Engineered Human</li><li>The Behavioral State</li><li>Freedom</li></ul></div>
+</div>
+
+<div class="panel">
+<h2>THE JOURNEY OF THE PUBLICATION</h2>
+<div class="timeline">
+<div class="ms left"><div class="marker">✓</div><div class="card">Introductory Episode Published</div></div>
+<div class="ms right"><div class="marker">✓</div><div class="card">Brand Identity Established</div></div>
+<div class="ms left"><div class="marker">✓</div><div class="card">Website Online</div></div>
+<div class="ms right current"><div class="marker">◎</div><div class="card">Production Underway</div></div>
+<div class="ms left future"><div class="marker">○</div><div class="card">Season One Published</div></div>
+<div class="ms right quill"><div class="marker">✒</div><div class="card">Season Two In Development</div></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer">
+<h2>UNDERSTAND THE PAST. ENGAGE THE PRESENT. HELP SHAPE THE FUTURE.</h2>
+<p>THE STORY IS JUST BEGINNING.</p>
+<a class="return-home" href="index.html">RETURN TO PORTFOLIO</a>
+</div>
+
+<script>
+const lines=[
+'Ideas shape nations.',
+'Words shape ideas.',
+'An informed citizenry<br>is the foundation of democracy.'
+];
+let i=0;
+const el=document.getElementById('trailerText');
+function next(){
+ if(i>=lines.length){
+   const t=document.getElementById('trailer');
+   t.style.transition='opacity 1.5s';
+   t.style.opacity='0';
+   setTimeout(()=>t.remove(),1500);
+   return;
+ }
+ el.innerHTML=lines[i++];
+ setTimeout(next,2200);
+}
+next();
+</script>
+
+</body>
+</html>
