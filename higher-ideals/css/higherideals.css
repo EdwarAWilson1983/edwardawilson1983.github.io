@@ -1,18 +1,181 @@
 
-/* Higher Ideas V15.1 - Watermark Fix */
+/* HIGHER IDEALS V16 FULL RECOVERY */
 
-.watermark-image{
-    position:absolute;
-    right:20px;
-    bottom:20px;
-    width:120px;
-    height:auto;
-    opacity:0.08;
-    pointer-events:none;
-    z-index:0;
+:root{
+  --navy:#08275f;
+  --gold:#cfa64a;
+  --cream:#f5f2ea;
 }
 
-/* Optional: make archives panel relative for watermark positioning */
-.archives-card{
-    position:relative;
+*{box-sizing:border-box;}
+
+body{
+  margin:0;
+  background:var(--cream);
+  color:#132b5e;
+  font-family:Georgia, serif;
+}
+
+.site-header{
+  background:var(--navy);
+  border-bottom:2px solid var(--gold);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 28px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+.brand img{
+  width:76px;
+  height:auto;
+}
+
+.brand h1{
+  color:white;
+  margin:0;
+  font-size:3rem;
+  line-height:1;
+}
+
+.brand p{
+  margin:4px 0 0;
+  color:var(--gold);
+  font-style:italic;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:24px;
+  font-weight:700;
+}
+
+nav a:last-child{
+  color:var(--gold);
+}
+
+.editorial-panel{
+  display:grid;
+  grid-template-columns:42% 58%;
+  min-height:700px;
+}
+
+.left-column{
+  padding:80px 70px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.left-column h2{
+  font-size:5.5rem;
+  line-height:.9;
+  color:var(--navy);
+  margin:0;
+}
+
+.editorial-divider{
+  width:140px;
+  height:2px;
+  background:var(--gold);
+  margin:35px 0;
+}
+
+.left-column p{
+  font-size:1.1rem;
+  line-height:1.7;
+  max-width:520px;
+}
+
+.btn,.essay-button{
+  display:inline-block;
+  background:var(--navy);
+  color:white;
+  text-decoration:none;
+  border:2px solid var(--gold);
+  padding:16px 28px;
+  font-weight:bold;
+}
+
+.btn{
+  margin-top:20px;
+  width:max-content;
+}
+
+.credit{
+  margin-top:28px;
+  font-style:italic;
+}
+
+.right-column{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.right-column img{
+  width:72%;
+  max-width:720px;
+  height:auto;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+}
+
+.card{
+  border:1px solid rgba(207,166,74,.5);
+  padding:40px;
+  min-height:320px;
+}
+
+.card h3{
+  color:var(--gold);
+}
+
+.watermark{
+  position:relative;
+}
+
+.watermark-image{
+  position:absolute;
+  right:20px;
+  bottom:20px;
+  width:180px;
+  opacity:.12;
+  pointer-events:none;
+}
+
+.quote{
+  background:var(--navy);
+  color:white;
+  text-align:center;
+  padding:28px;
+  font-style:italic;
+  font-size:1.3rem;
+}
+
+@media (max-width: 900px){
+  .editorial-panel{
+    grid-template-columns:1fr;
+  }
+
+  .left-column{
+    padding:50px 30px;
+  }
+
+  .left-column h2{
+    font-size:4rem;
+  }
+
+  .cards{
+    grid-template-columns:1fr;
+  }
 }
