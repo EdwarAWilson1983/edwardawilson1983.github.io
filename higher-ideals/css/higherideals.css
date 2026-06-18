@@ -142,14 +142,16 @@ nav a:last-child{
 
 .watermark{
   position:relative;
+  overflow:hidden;
 }
 
 .watermark-image{
-  position:absolute;
+  position:absoloute;
   right:20px;
   bottom:20px;
-  width:180px;
-  opacity:.12;
+  width:350px;
+  height:auto;
+  opacity:.20;
   pointer-events:none;
 }
 
