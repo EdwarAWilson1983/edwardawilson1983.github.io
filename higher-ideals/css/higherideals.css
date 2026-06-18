@@ -1,1 +1,23 @@
 
+body{margin:0;background:#f7f3ea;font-family:Georgia,serif;color:#10254d}
+.site-header{background:#001f54;color:white;padding:20px 40px;display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid #c9a24a}
+.brand{display:flex;gap:16px;align-items:center}
+.brand img{height:85px}
+.brand h1{margin:0;font-size:3rem}
+.brand p{margin:0;color:#c9a24a;font-style:italic}
+nav a{color:white;text-decoration:none;margin-left:24px;font-weight:bold}
+nav a:last-child{color:#c9a24a}
+
+.editorial-panel{display:grid;grid-template-columns:38% 62%;max-width:1400px;margin:0 auto}
+.left-column{padding:60px 70px;background:#f7f3ea;display:flex;flex-direction:column;justify-content:center}
+.left-column h2{font-size:4.8rem;line-height:.9;margin:0 0 20px}
+.left-column p{font-size:1.2rem;line-height:1.7}
+.btn{display:inline-block;background:#001f54;color:white;padding:16px 24px;text-decoration:none;border:2px solid #c9a24a;width:max-content}
+.credit{margin-top:25px;font-style:italic}
+.right-column{display:flex;align-items:center;justify-content:center;background:#f7f3ea;padding:20px}
+.right-column img{max-width:100%;height:auto;display:block}
+
+.cards{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr 1fr}
+.card{background:#fbf8f1;border:1px solid #d8c8a0;padding:35px;min-height:220px}
+.watermark{background:url('images/higher-ideals/seal-watermark.png') no-repeat right bottom;background-size:180px}
+.quote{background:#001f54;color:white;text-align:center;padding:35px;font-size:1.4rem}
