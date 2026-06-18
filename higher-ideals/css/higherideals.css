@@ -146,13 +146,13 @@ nav a:last-child{
 }
 
 .watermark-image{
-  position:absoloute;
-  right:20px;
-  bottom:20px;
-  width:350px;
-  height:auto;
-  opacity:.20;
-  pointer-events:none;
+    position:absolute;
+    right:-20px;
+    bottom:20px;
+    width:320px;
+    height:auto;
+    opacity:.18;
+    pointer-events:none;
 }
 
 .quote{
