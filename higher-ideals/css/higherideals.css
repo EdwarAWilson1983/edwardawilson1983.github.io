@@ -147,7 +147,7 @@ nav a:last-child{
 
 .watermark-image{
     position:absolute;
-    right:-20px;
+    right:40px;
     bottom:20px;
     width:320px;
     height:auto;
