@@ -13,7 +13,15 @@
 body{margin:0;background:var(--cream);font-family:Georgia,serif;color:#222;}
 header{background:var(--navy);color:white;padding:20px 40px;}
 header h1{margin:0;}
-nav a{color:white;text-decoration:none;margin-left:24px;}
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:24px;}
+
+    nav a:hover{
+    color:var(--gold);
+}
+    
 .header-wrap{
     max-width:1400px;
     margin:0 auto;
@@ -60,6 +68,13 @@ nav{
 .type{color:var(--gold);font-weight:bold;letter-spacing:3px;}
 .hero h2{font-size:3rem;color:var(--navy);margin:15px 0;}
 .subtitle{font-style:italic;color:#555;}
+
+.meta{
+color:#666;
+font-size:1rem;
+margin-top:20px;
+}
+    
 .pdfbtn{display:inline-block;margin-top:20px;padding:12px 20px;background:var(--navy);color:white;text-decoration:none;border:2px solid var(--gold);}
 
 .quote{
@@ -94,7 +109,26 @@ margin-bottom:20px;
 .author{max-width:900px;margin:60px auto;display:flex;gap:30px;align-items:center;padding:0 20px;}
 .author img{width:220px;}
 .next{text-align:center;max-width:900px;margin:60px auto;padding:30px;border-top:1px solid #ccc;}
-.footerlink{text-align:center;margin:40px;}
+.footerlink{
+text-align:center;
+margin:50px 0;
+}
+
+.footerlink a{
+display:inline-block;
+padding:12px 24px;
+border:2px solid var(--gold);
+background:white;
+color:var(--navy);
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+.footerlink a:hover{
+background:var(--navy);
+color:white;
+}
 </style>
 </head>
 <body>
@@ -122,7 +156,9 @@ margin-bottom:20px;
 <div class="type">FOUNDING ESSAY</div>
 <h2>The Principles That Shape My Political Philosophy</h2>
 <div class="subtitle">A Founding Essay on Democracy, Civic Responsibility, Public Service, and Progressive Reform</div>
-<p>Edward A. Wilson • June 2026</p>
+<p class="meta">
+Edward A. Wilson • June 2026 • 15 Minute Read
+</p>
 <a class="pdfbtn" href="The_Principles_That_Shape_My_Political_Philosophy.pdf" target="_blank">DOWNLOAD PDF EDITION</a>
 </section>
 
@@ -399,14 +435,10 @@ then it will have accomplished exactly what it was created to do.</p>
 <img src="../images/about_the_author.png" alt="Edward A. Wilson">
 <div>
 <h2>About the Author</h2>
-<p>Edward A. Wilson is a Political Science graduate, writer,
-civic advocate, and founder of Higher Ideals.
-
-His work focuses on American history, democratic institutions,
-public policy, and civic engagement.
-
-Through Higher Ideals, he explores the ideas, principles,
-and responsibilities that sustain a healthy democracy.</p>
+<p><p>Edward A. Wilson is a Political Science graduate, writer, civic advocate,
+and founder of Higher Ideals. His work focuses on American history, democratic institutions,
+public policy, and civic engagement. Through Higher Ideals, he explores the ideas, principles,
+and responsibilities that sustain a healthy democracy.</p></p>
 </div>
 </section>
 
