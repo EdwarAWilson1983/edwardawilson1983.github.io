@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Higher Ideals</title>
+
+<style>
+:root{
+--navy:#0b2c6b;
+--gold:#cfa64a;
+--cream:#f5f2ea;
+}
+
+*{box-sizing:border-box;}
+
+body{
+margin:0;
+background:var(--cream);
+font-family:Georgia, serif;
+color:#102a43;
+}
+
+header{
+background:var(--navy);
+color:white;
+padding:20px 40px;
+border-bottom:2px solid var(--gold);
+}
+
+.header-wrap{
+display:flex;
+justify-content:space-between;
+align-items:center;
+max-width:1400px;
+margin:auto;
+}
+
+.brand{
+display:flex;
+align-items:center;
+gap:16px;
+}
+
+.brand img{
+height:70px;
+}
+
+.brand h1{
+margin:0;
+font-size:3rem;
+}
+
+.brand p{
+margin:0;
+color:var(--gold);
+font-style:italic;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:bold;
+}
+
+.hero{
+display:grid;
+grid-template-columns:1fr 1fr;
+max-width:1400px;
+margin:auto;
+}
+
+.hero-text{
+padding:60px;
+}
+
+.hero-text h2{
+font-size:5rem;
+line-height:.9;
+margin-bottom:20px;
+color:var(--navy);
+}
+
+.divider{
+width:140px;
+height:3px;
+background:var(--gold);
+margin:30px 0;
+}
+
+.hero-text p{
+font-size:1.25rem;
+line-height:1.8;
+}
+
+.hero-image img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:16px 28px;
+background:var(--navy);
+color:white;
+text-decoration:none;
+border:2px solid var(--gold);
+font-weight:bold;
+}
+
+.cards{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+max-width:1400px;
+margin:auto;
+}
+
+.card{
+position:relative;
+padding:40px;
+min-height:320px;
+border:1px solid rgba(207,166,74,.5);
+overflow:hidden;
+}
+
+.card h3{
+color:var(--gold);
+}
+
+.card h2{
+color:var(--navy);
+}
+
+.watermark{
+position:absolute;
+right:20px;
+bottom:-20px;
+width:320px;
+opacity:.18;
+pointer-events:none;
+}
+
+.quote{
+background:var(--navy);
+color:white;
+text-align:center;
+padding:28px;
+font-size:1.4rem;
+font-style:italic;
+}
+
+@media(max-width:900px){
+.hero,.cards{
+grid-template-columns:1fr;
+}
+.hero-text h2{
+font-size:3rem;
+}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="header-wrap">
+
+<div class="brand">
+<img src="images/seal.png" alt="Seal">
+<div>
+<h1>HIGHER IDEALS</h1>
+<p>Essays & Commentary on American History, Ideas, and Institutions</p>
+</div>
+</div>
+
+<nav>
+<a href="higherideals.html">Home</a>
+<a href="essays/hiprinciples.html">Essays</a>
+<a href="#">Archives</a>
+<a href="../index.html">eawilson.com</a>
+</nav>
+
+</div>
+</header>
+
+<section class="hero">
+
+<div class="hero-text">
+<h2>HIGHER<br>IDEALS</h2>
+
+<div class="divider"></div>
+
+<p>
+Higher Ideals is an independent publication exploring American history,
+political thought, public policy, and civic engagement.
+</p>
+
+<p>
+Through research-driven essays and historical analysis, the publication examines the institutions,
+ideas, and democratic traditions that have shaped the United States and continue to influence public life today.
+</p>
+
+<p>
+The goal is not simply commentary, but understanding: connecting history to current challenges and encouraging informed citizenship,
+critical thinking, and meaningful participation in democratic society.
+</p>
+
+<a class="btn" href="essays/hiprinciples.html">
+READ THE PRINCIPLES THAT GUIDE THIS PUBLICATION
+</a>
+
+</div>
+
+<div class="hero-image">
+<img src="images/Ed Independence hall.jpg" alt="Independence Hall">
+</div>
+
+</section>
+
+<section class="cards">
+
+<div class="card">
+<h3>FEATURED ESSAY</h3>
+
+<h2>The Principles That Shape My Political Philosophy</h2>
+
+<p>
+The founding essay of Higher Ideals outlining the principles,
+values, and democratic ideals that guide this publication.
+</p>
+
+<a class="btn" href="essays/hiprinciples.html">READ THE ESSAY</a>
+</div>
+
+<div class="card">
+<h3>ABOUT HIGHER IDEALS</h3>
+
+<p>
+Higher Ideals examines the ideas, institutions, and civic traditions that shape American democracy.
+</p>
+
+<ul>
+<li>American History</li>
+<li>Democratic Institutions</li>
+<li>Public Policy</li>
+<li>Civic Engagement</li>
+<li>Political Reform</li>
+</ul>
+
+<p>
+Future essays will explore historical and contemporary questions through research, analysis, and public dialogue.
+</p>
+</div>
+
+<div class="card">
+<h3>ARCHIVES</h3>
+
+<p><strong>2026</strong></p>
+
+<img class="watermark" src="images/seal-watermark.png" alt="Watermark">
+</div>
+
+</section>
+
+<div class="quote">
+“Democracy is never a final achievement. It is a call to an untiring effort.” — John F. Kennedy
+</div>
+
+</body>
+</html>
