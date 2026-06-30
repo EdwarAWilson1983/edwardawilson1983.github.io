@@ -1068,15 +1068,15 @@ figcaption{
 }
 
 .timeline-item{
-
     position:relative;
-
-    padding:0 0 42px 30px;
+    
+    padding:0 0 42px 42px;
 
     margin-bottom:32px;
-
-
 }
+
+
+
 
 .timeline-item::after{
 
@@ -1084,7 +1084,7 @@ figcaption{
 
     position:absolute;
 
-    left:0;
+    left:11px;
 
     top:24px;
 
@@ -1118,7 +1118,7 @@ figcaption{
 
     position:absolute;
 
-    left:-8px;
+    left:0;
 
     top:5px;
 
@@ -1135,7 +1135,7 @@ figcaption{
 
 }
 
-}
+
 .timeline-year{
 
     display:block;
@@ -1192,22 +1192,171 @@ figcaption{
    EDITORIAL MODULES
 ========================================================== */
 
+
 .editorial-module{
-
     float:right;
-
     width:320px;
-
     margin:20px -70px 40px 40px;
-
     padding:30px;
-
     background:#fdfbf6;
-
     border:1px solid rgba(194,150,39,.12);
-
     border-radius:20px;
-
     box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+#sources{
+    clear:right;
+}
+
+/* ==========================================================
+   SOURCES
+========================================================== */
+
+.sources-intro{
+    max-width:900px;
+    margin:0 0 50px;
+    font-style:italic;
+    color:#555;
+}
+
+.sources-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:32px;
+    margin-top:40px;
+}
+
+.source-category{
+    height:100%;
+    background:#faf8f2;
+    padding:28px;
+    border-radius:16px;
+    border:1px solid rgba(200,160,60,.18);
+    box-shadow:0 8px 24px rgba(0,0,0,.05);
+}
+
+.source-category h3{
+    margin:0 0 18px;
+    color:var(--navy);
+    font-size:1.8rem;
+    border-bottom:2px solid var(--gold);
+    padding-bottom:8px;
+}
+
+.source-category ul{
+    margin:0;
+    padding-left:22px;
+}
+
+.source-category li{
+    margin-bottom:10px;
+    line-height:1.6;
+}
+
+
+/* =====================================================
+   FRANKLIN FEATURE
+===================================================== */
+
+.section-break{
+    margin:70px auto;
+    text-align:center;
+}
+
+.photo-heading{
+    font-family:'Cormorant Garamond', serif;
+    font-size:2rem;
+    font-style:italic;
+    color:#1e3a6d;
+    margin-bottom:30px;
+    position:relative;
+}
+
+.photo-heading:before,
+.photo-heading:after{
+    content:"";
+    position:absolute;
+    top:50%;
+    width:30%;
+    height:2px;
+    background:#c7a347;
+}
+
+.photo-heading:before{
+    left:0;
+}
+
+.photo-heading:after{
+    right:0;
+}
+
+.photo-pair{
+    display:flex;
+    gap:25px;
+    justify-content:center;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    margin-bottom:20px;
+}
+
+.photo-pair .article-photo{
+    flex:1 1 380px;
+    max-width:520px;
+}
+
+.photo-pair img{
+    width:100%;
+    border-radius:8px;
+    border:1px solid #d8d8d8;
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+}
+
+.photo-pair-caption{
+    max-width:900px;
+    margin:0 auto;
+    font-style:italic;
+    color:#666;
+    line-height:1.6;
+}
+
+/* ==========================================================
+   DOWNLOAD BUTTON
+========================================================== */
+
+.article-download{
+
+    margin:30px 0 45px;
+
+}
+
+.download-button{
+
+    display:inline-block;
+
+    padding:12px 24px;
+
+    background:var(--navy);
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-family:Inter,sans-serif;
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+    border-radius:999px;
+
+    transition:all .2s ease;
+
+}
+
+.download-button:hover{
+
+    background:var(--gold);
+
+    color:var(--navy);
 
 }
