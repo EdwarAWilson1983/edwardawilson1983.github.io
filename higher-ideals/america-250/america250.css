@@ -525,17 +525,15 @@ article p{
 
     float:left;
 
-    font-size:5rem;
-
-    line-height:.8;
-
-    margin-right:10px;
-
-    color:var(--navy);
-
     font-family:"Cormorant Garamond",serif;
 
-    font-weight:700;
+    font-size:5.5rem;
+
+    line-height:.82;
+
+    padding-right:.35rem;
+
+    color:#153a84;
 
 }/* ==========================================================
    FIGURES
@@ -1358,5 +1356,302 @@ figcaption{
     background:var(--gold);
 
     color:var(--navy);
+
+}
+
+/* ==========================================================
+   AMERICA 250 FRAMEWORK OVERRIDES
+========================================================== */
+
+.page{
+
+    max-width:1900px;
+
+}
+
+.page main{
+
+    max-width:none;
+
+    width:100%;
+
+}
+
+/* ==========================================================
+   AMERICA 250 SPECIAL EDITION
+========================================================== */
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.hero-special{
+
+    text-align:center;
+
+    border-bottom:none;
+
+    padding-bottom:80px;
+
+    margin-bottom:60px;
+
+}
+
+.hero-special .article-category{
+
+    display:inline-block;
+
+    padding:10px 28px;
+
+    border:2px solid var(--gold);
+
+    border-radius:999px;
+
+    background:rgba(11,44,107,.04);
+
+    margin-bottom:28px;
+
+}
+
+.hero-special .article-title{
+
+    font-size:5.5rem;
+
+    line-height:.95;
+
+    max-width:900px;
+
+    margin:auto auto 30px;
+
+}
+
+.hero-special .article-subtitle{
+
+    font-size:2rem;
+
+    font-style:italic;
+
+    max-width:700px;
+
+    margin:auto auto 25px;
+
+}
+
+.hero-special .article-meta{
+
+    font-family:Inter,sans-serif;
+
+}
+
+/* ==========================================================
+   THREE COLUMN SPECIAL EDITION
+========================================================== */
+
+.special-edition{
+
+    display:grid;
+
+    grid-template-columns:
+        275px
+        minmax(800px,900px)
+        275px;
+
+    gap:40px;
+
+    justify-content:center;
+
+    align-items:start;
+
+    margin:40px auto 80px;
+
+    width:100%;
+
+}
+
+.special-panel{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+}
+
+.special-panel .panel-frame{
+
+    width:100%;
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    padding:14px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+
+.panel-art{
+
+    width:100%;
+
+    border-radius:18px;
+
+    box-shadow:
+
+        0 20px 40px rgba(0,0,0,.18);
+
+    object-fit:cover;
+
+}
+
+/* ==========================================================
+   PARCHMENT
+========================================================== */
+
+.parchment{
+
+    position:relative;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #f8eed0 0%,
+            #f3e4ba 100%
+        );
+
+    border:1px solid #d2b36c;
+
+    border-radius:18px;
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.18);
+
+    overflow:hidden;
+
+}
+
+.parchment::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        radial-gradient(
+            circle at top left,
+            rgba(255,255,255,.35),
+            transparent 40%
+        ),
+
+        radial-gradient(
+            circle at bottom right,
+            rgba(0,0,0,.05),
+            transparent 45%
+        );
+
+    pointer-events:none;
+
+}
+
+.parchment-inner{
+
+    max-width:760px;
+
+    margin:auto;
+
+    padding:
+
+        100px
+        90px
+        110px;
+
+}
+
+/* ==========================================================
+   LETTER
+========================================================== */
+
+.letter-header{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.letter-kicker{
+
+    font-family:Inter,sans-serif;
+
+    text-transform:uppercase;
+
+    letter-spacing:.35em;
+
+    color:#8a6c38;
+
+    font-size:.85rem;
+
+}
+
+.letter-header h2{
+
+    font-size:4.5rem;
+
+    margin:.4rem 0;
+
+}
+
+.letter-header h3{
+
+    font-size:2.3rem;
+
+    margin:.3rem 0 1rem;
+
+    color:#7d2e24;
+
+}
+
+.letter-divider{
+
+    width:220px;
+
+    height:2px;
+
+    margin:40px auto;
+
+    background:
+
+        linear-gradient(
+            to right,
+            transparent,
+            var(--gold),
+            transparent
+        );
+
+}
+
+.letter-signature{
+
+    margin-top:90px;
+
+    text-align:center;
+
+    font-size:2rem;
+
+}
+
+#letter{
+
+    color:#2d2316;
+
+    font-size:1.35rem;
+
+    line-height:2;
 
 }
