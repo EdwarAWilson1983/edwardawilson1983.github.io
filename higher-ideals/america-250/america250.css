@@ -1655,3 +1655,55 @@ figcaption{
     line-height:2;
 
 }
+
+.publication-tools{
+
+    margin-top:35px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.publication-tools a,
+
+.publication-tools button{
+
+    display:block;
+
+    width:100%;
+
+    padding:12px;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    border:1px solid var(--gold);
+
+    border-radius:10px;
+
+    background:white;
+
+    color:var(--navy);
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.publication-tools a:hover,
+
+.publication-tools button:hover{
+
+    background:var(--gold);
+
+    color:white;
+
+}
