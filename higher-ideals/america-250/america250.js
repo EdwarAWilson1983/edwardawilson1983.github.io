@@ -164,4 +164,14 @@ document.addEventListener("keydown",(e)=>{
 
     }
 
+document
+.getElementById("print-article")
+?.addEventListener("click",()=>{
+
+    window.print();
+
+});
+
+
+   
 });
