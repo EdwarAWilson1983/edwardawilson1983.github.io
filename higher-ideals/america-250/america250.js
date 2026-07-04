@@ -175,3 +175,21 @@ document
 
    
 });
+/* ===========================================
+   READING TIME
+=========================================== */
+
+const article = document.querySelector("#letter");
+
+const readingTime = document.querySelector("#reading-time");
+
+if(article && readingTime){
+
+    const words = article.innerText.trim().split(/\s+/).length;
+
+    const minutes = Math.max(1, Math.ceil(words / 225));
+
+    readingTime.textContent =
+        `${minutes} minute${minutes > 1 ? "s" : ""} read`;
+
+}
