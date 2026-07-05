@@ -1707,3 +1707,15 @@ figcaption{
     color:white;
 
 }
+
+#letter p{
+
+    margin-bottom:1.6em;
+
+}
+
+#letter p:has(strong){
+
+    text-align:center;
+
+}
