@@ -423,6 +423,46 @@ main{
 
 }
 
+.edition-info{
+
+    margin:30px 0;
+
+}
+
+.edition-title{
+
+    font-family:"Cormorant Garamond", serif;
+
+    font-size:2rem;
+
+    color:var(--navy);
+
+    margin-bottom:12px;
+
+}
+
+.publication-details h4{
+
+    margin-top:28px;
+
+    margin-bottom:8px;
+
+    font-size:.82rem;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    color:#777;
+
+}
+
+.publication-details p{
+
+    margin-bottom:20px;
+
+}
+
 /* ==========================================================
    AMERICA 250 HERO
 ========================================================== */
