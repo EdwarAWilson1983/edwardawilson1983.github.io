@@ -1564,6 +1564,17 @@ figcaption{
 
 }
 
+.left-panel,
+.right-panel{
+
+    position:sticky;
+
+    top:40px;
+
+    align-self:start;
+
+}
+
 .panel-art{
 
     display:block;
