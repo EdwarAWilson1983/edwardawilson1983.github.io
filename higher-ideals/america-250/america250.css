@@ -1538,6 +1538,18 @@ figcaption{
 
 }
 
+.special-panel img{
+
+    display:block;
+
+    width:100%;
+
+    height:auto;
+
+    border-radius:12px;
+
+}
+
 .special-panel .panel-frame{
 
     width:100%;
