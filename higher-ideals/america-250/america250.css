@@ -25,13 +25,13 @@ body{
 
     background:#f3f1eb;
 
-    color:#222;
+    color:#2f2419;
 
     font-family:"Source Serif 4", Georgia, serif;
 
-    font-size:22px;
+  font-size:23px;
 
-    line-height:1.8;
+line-height:1.9;
 
 }
 
@@ -561,19 +561,23 @@ article p{
 
 }
 
-.dropcap:first-letter{
+.dropcap::first-letter{
 
     float:left;
 
-    font-family:"Cormorant Garamond",serif;
+    font-family:"Cormorant Garamond", serif;
 
-    font-size:5.5rem;
+    font-size:6rem;
 
-    line-height:.82;
+    font-weight:700;
 
-    padding-right:.35rem;
+    line-height:.72;
 
-    color:#153a84;
+    padding-right:.18em;
+
+    margin-top:.08em;
+
+    color:#1f3a84;
 
 }/* ==========================================================
    AMERICA 250 FIGURES
