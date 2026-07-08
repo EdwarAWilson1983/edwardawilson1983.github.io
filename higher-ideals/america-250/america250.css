@@ -1451,9 +1451,9 @@ figcaption{
 
     border-bottom:none;
 
-    padding:90px 80px 70px;
+    padding-bottom:35px;
 
-    margin-bottom:60px;
+    margin-bottom:10px;
 
 }
 
@@ -1524,7 +1524,7 @@ figcaption{
 
     align-items:start;
 
-    margin:40px auto 80px;
+    margin:0px auto 80px;
 
     width:100%;
 
@@ -1554,7 +1554,9 @@ figcaption{
 
 .special-panel .panel-frame{
 
-    background:transparent;
+width:100%;
+
+background:transparent;
 
 padding:0;
 
@@ -1583,23 +1585,13 @@ box-shadow:none;
 
     height:auto;
 
-}
+   border-radius:12px;
+
+    box-shadow:none;
 
 }
 
-.panel-art{
 
-    width:100%;
-
-    border-radius:18px;
-
-    box-shadow:
-
-        0 20px 40px rgba(0,0,0,.18);
-
-    object-fit:cover;
-
-}
 
 /* ==========================================================
    PARCHMENT
