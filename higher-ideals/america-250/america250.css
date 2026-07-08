@@ -1511,8 +1511,6 @@ figcaption{
 
     display:grid;
 
-    .special-edition{
-
     grid-template-columns:
         320px
         minmax(860px,940px)
