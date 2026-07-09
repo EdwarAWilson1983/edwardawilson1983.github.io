@@ -1676,6 +1676,10 @@ figcaption{
 
 .author-box{
 
+    display:flex;
+    align-items:center;
+    gap:40px;
+
     margin-top:100px;
 
     padding:35px 40px;
@@ -1683,6 +1687,47 @@ figcaption{
     border-top:2px solid #d2b36c;
 
     background:rgba(255,255,255,.35);
+
+    border-radius:20px;
+
+}
+
+.author-photo{
+
+    width:180px;
+    height:180px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:5px solid #d2b36c;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.20);
+
+    flex-shrink:0;
+
+}
+
+.author-info{
+
+    flex:1;
+
+}
+
+.author-label{
+
+    display:block;
+
+    font-size:.8rem;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    color:#777;
+
+    margin-bottom:12px;
 
 }
 
