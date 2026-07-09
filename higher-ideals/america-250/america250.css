@@ -1669,3 +1669,39 @@ figcaption{
     line-height:2;
 
 }
+
+/* ==========================================
+   ABOUT THE AUTHOR
+========================================== */
+
+.author-box{
+
+    margin-top:100px;
+
+    padding:35px 40px;
+
+    border-top:2px solid #d2b36c;
+
+    background:rgba(255,255,255,.35);
+
+}
+
+.author-box h2{
+
+    margin-top:0;
+
+    color:var(--navy);
+
+    font-size:2rem;
+
+}
+
+.author-box p{
+
+    margin-bottom:0;
+
+    font-size:1.05rem;
+
+    line-height:1.9;
+
+}
