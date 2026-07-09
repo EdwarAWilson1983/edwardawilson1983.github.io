@@ -261,7 +261,7 @@ main{
 
     padding:70px;
 
-    background-image:url("assets/america250-background.png");
+    background-image: url("images/america250-background.png");
     background-repeat:repeat-y;
     background-position:center top;
     background-size:100% auto;
