@@ -4,7 +4,7 @@
 ========================================================== */
 
 /* ==========================
-  AMERICA 250 RESET
+   RESET
 ========================== */
 
 *,
@@ -25,13 +25,13 @@ body{
 
     background:#f3f1eb;
 
-    color:#2f2419;
+    color:#222;
 
     font-family:"Source Serif 4", Georgia, serif;
 
-  font-size:23px;
+    font-size:22px;
 
-line-height:1.9;
+    line-height:1.8;
 
 }
 
@@ -58,7 +58,7 @@ line-height:1.9;
 }
 
 /* ==========================
-  AMERICA 250 TYPOGRAPHY
+   TYPOGRAPHY
 ========================== */
 
 h1,
@@ -107,7 +107,7 @@ img{
 }
 
 /* ==========================================================
- AMERICA 250 PAGE LAYOUT
+   PAGE LAYOUT
 ========================================================== */
 
 .site-header{
@@ -231,6 +231,8 @@ img{
 
     align-items:start;
 
+   
+
 }
 
 .sidebar{
@@ -255,15 +257,17 @@ img{
 
 main{
 
-    background:white;
+    min-width:0;
 
     padding:70px;
 
-    border-radius:16px;
+    background-image:url("assets/america250-background.png");
+    background-repeat:repeat-y;
+    background-position:center top;
+    background-size:100% auto;
 
-    box-shadow:var(--shadow);
-
-    min-width:0;
+    display:flex;
+    justify-content:center;
 
 }
 
@@ -306,7 +310,7 @@ main{
 }
 
 /* ==========================================================
-   AMERICA 250 SIDEBAR
+   SIDEBAR
 ========================================================== */
 
 .toc-box{
@@ -423,48 +427,8 @@ main{
 
 }
 
-.edition-info{
-
-    margin:30px 0;
-
-}
-
-.edition-title{
-
-    font-family:"Cormorant Garamond", serif;
-
-    font-size:2rem;
-
-    color:var(--navy);
-
-    margin-bottom:12px;
-
-}
-
-.publication-details h4{
-
-    margin-top:28px;
-
-    margin-bottom:8px;
-
-    font-size:.82rem;
-
-    letter-spacing:2px;
-
-    text-transform:uppercase;
-
-    color:#777;
-
-}
-
-.publication-details p{
-
-    margin-bottom:20px;
-
-}
-
 /* ==========================================================
-   AMERICA 250 HERO
+   ARTICLE HERO
 ========================================================== */
 
 .hero{
@@ -532,7 +496,7 @@ main{
 }
 
 /* ==========================================================
-   AMERICA 250 BODY
+   ARTICLE BODY
 ========================================================== */
 
 article{
@@ -561,26 +525,22 @@ article p{
 
 }
 
-.dropcap::first-letter{
+.dropcap:first-letter{
 
     float:left;
 
-    font-family:"Cormorant Garamond", serif;
+    font-family:"Cormorant Garamond",serif;
 
-    font-size:6rem;
+    font-size:5.5rem;
 
-    font-weight:700;
+    line-height:.82;
 
-    line-height:.72;
+    padding-right:.35rem;
 
-    padding-right:.18em;
-
-    margin-top:.08em;
-
-    color:#1f3a84;
+    color:#153a84;
 
 }/* ==========================================================
-   AMERICA 250 FIGURES
+   FIGURES
 ========================================================== */
 
 figure{
@@ -588,22 +548,6 @@ figure{
     margin:70px auto;
 
     max-width:900px;
-
-}
-
-.collage-image{
-
-    width:100%;
-
-    height:100%;
-
-    display:block;
-
-    object-fit:cover;
-
-    border-radius:18px;
-
-    box-shadow:0 18px 45px rgba(0,0,0,.18);
 
 }
 
@@ -635,7 +579,7 @@ figcaption{
 
 
 /* ==========================================================
-  AMERICA 250 PULL QUOTES
+   PULL QUOTES
 ========================================================== */
 
 blockquote{
@@ -662,7 +606,7 @@ blockquote{
 
 
 /* ==========================================================
-   AMERICA 250 TABLES
+   TABLES
 ========================================================== */
 
 table{
@@ -696,7 +640,7 @@ td{
 
 
 /* ==========================================================
-   AMEERICA 250 SOURCES
+   SOURCES
 ========================================================== */
 
 article ul{
@@ -714,7 +658,7 @@ article li{
 }
 
 /* ==========================================================
-  AMERICA 250  PROGRESS BAR
+   PROGRESS BAR
 ========================================================== */
 
 #progress{
@@ -737,7 +681,7 @@ article li{
 
 
 /* ==========================================================
-   AMERICA 250 BACK TO TOP
+   BACK TO TOP
 ========================================================== */
 
 #top{
@@ -810,7 +754,7 @@ article li{
 
 
 /* ==========================================================
-  AMERICA 250 FOOTER
+   FOOTER
 ========================================================== */
 
 .site-footer{
@@ -856,7 +800,7 @@ article li{
 }
 
 /* ==========================================================
-  AMERICA 250 RESPONSIVE
+   RESPONSIVE
 ========================================================== */
 
 @media (max-width:1100px){
@@ -924,7 +868,7 @@ article li{
 }
 
 /* ==========================================================
-   AMERICA 250 IMAGES
+   ARTICLE IMAGES
 ========================================================== */
 
 figure{
@@ -978,7 +922,7 @@ figcaption{
 }
 
 /* ==========================================================
-  AMERICA 250 IMAGE LIGHTBOX
+   IMAGE LIGHTBOX
 ========================================================== */
 
 .lightbox{
@@ -1451,9 +1395,9 @@ figcaption{
 
     border-bottom:none;
 
-    padding-bottom:35px;
+    padding-bottom:80px;
 
-    margin-bottom:10px;
+    margin-bottom:60px;
 
 }
 
@@ -1475,7 +1419,7 @@ figcaption{
 
 .hero-special .article-title{
 
-    font-size:4.8rem;
+    font-size:5.5rem;
 
     line-height:.95;
 
@@ -1511,107 +1455,69 @@ figcaption{
 
     display:grid;
 
-    grid-template-columns:320px minmax(860px,940px) 320px;
+    grid-template-columns:
+        275px
+        minmax(800px,900px)
+        275px;
 
     gap:40px;
 
-    max-width:1700px;
-
-    margin:0 auto 80px;
+    justify-content:center;
 
     align-items:start;
 
-    justify-content:center;
+    margin:40px auto 80px;
+
+    width:100%;
 
 }
 
 .special-panel{
 
-    position:sticky;
+    display:flex;
 
-    top:30px;
+    justify-content:center;
 
-    align-self:start;
+    align-items:flex-start;
 
 }
 
-.panel-frame{
+.special-panel .panel-frame{
 
     width:100%;
 
-    padding:0;
+    background:#ffffff;
 
-    background:transparent;
+    border-radius:18px;
 
-    border:none;
+    padding:14px;
 
-    box-shadow:none;
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
 
 }
+
 
 .panel-art{
 
-    display:block;
-
     width:100%;
 
-    height:auto;
+    border-radius:18px;
 
-    border-radius:12px;
+    box-shadow:
 
-    box-shadow:none;
+        0 20px 40px rgba(0,0,0,.18);
 
-}
-
-.left-panel{
-
-    justify-self:end;
+    object-fit:cover;
 
 }
-
-.right-panel{
-
-    justify-self:start;
-
-}
-
-/* Mobile */
-
-@media (max-width:1400px){
-
-    .special-edition{
-
-        grid-template-columns:280px minmax(700px,1fr) 280px;
-
-        gap:30px;
-
-    }
-
-}
-
-@media (max-width:1100px){
-
-    .special-edition{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .special-panel{
-
-        display:none;
-
-    }
-
-}
-
-
 
 /* ==========================================================
    PARCHMENT
 ========================================================== */
 
 .parchment{
+
+     width:min(700px,92%);
 
     position:relative;
 
@@ -1630,6 +1536,8 @@ figcaption{
         0 25px 60px rgba(0,0,0,.18);
 
     overflow:hidden;
+
+    
 
 }
 
@@ -1746,6 +1654,12 @@ figcaption{
 
 }
 
+.letter-subtitle{
+
+    text-align:center;
+
+}
+
 #letter{
 
     color:#2d2316;
@@ -1753,69 +1667,5 @@ figcaption{
     font-size:1.35rem;
 
     line-height:2;
-
-}
-
-.publication-tools{
-
-    margin-top:35px;
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:12px;
-
-}
-
-.publication-tools a,
-
-.publication-tools button{
-
-    display:block;
-
-    width:100%;
-
-    padding:12px;
-
-    text-align:center;
-
-    text-decoration:none;
-
-    border:1px solid var(--gold);
-
-    border-radius:10px;
-
-    background:white;
-
-    color:var(--navy);
-
-    cursor:pointer;
-
-    font-weight:600;
-
-    transition:.25s;
-
-}
-
-.publication-tools a:hover,
-
-.publication-tools button:hover{
-
-    background:var(--gold);
-
-    color:white;
-
-}
-
-#letter p{
-
-    margin-bottom:1.6em;
-
-}
-
-#letter p:has(strong){
-
-    text-align:center;
 
 }

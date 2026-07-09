@@ -5,7 +5,7 @@
 
 const article = document.getElementById("article-content");
 const toc = document.getElementById("toc");
-const readtime = document.getElementById("readtime");
+const readtime = document.getElementById("reading-time");
 const progress = document.getElementById("progress");
 const topButton = document.getElementById("top");
 
@@ -15,25 +15,31 @@ const topButton = document.getElementById("top");
 
 const headings = article.querySelectorAll("h2");
 
-headings.forEach((heading) => {
+if (toc) {
 
-    if (!heading.id) {
+    headings.forEach((heading) => {
 
-        heading.id = heading.textContent
-            .toLowerCase()
-            .replace(/\s+/g, "-");
+        if (!heading.id) {
+            heading.id = heading.textContent
+                .toLowerCase()
+                .replace(/\s+/g, "-");
+        }
 
-    }
+        const link = document.createElement("a");
 
-    const link = document.createElement("a");
+        link.href = "#" + heading.id;
 
-    link.href = "#" + heading.id;
+        link.textContent = heading.textContent;
 
-    link.textContent = heading.textContent;
+        toc.appendChild(link);
 
-    toc.appendChild(link);
+    });
 
-});
+}  
+
+/* ==========================================================
+   READING TIME
+========================================================== */
 
 /* ==========================================================
    READING TIME
@@ -163,67 +169,5 @@ document.addEventListener("keydown",(e)=>{
         lightbox.classList.remove("active");
 
     }
-
-document
-.getElementById("print-article")
-?.addEventListener("click",()=>{
-
-    window.print();
-
-});
-
-
-   
-});
-/* ===========================================
-   READING TIME
-=========================================== */
-
-const article = document.querySelector("#letter");
-
-const readingTime = document.querySelector("#reading-time");
-
-if(article && readingTime){
-
-    const words = article.innerText.trim().split(/\s+/).length;
-
-    const minutes = Math.max(1, Math.ceil(words / 225));
-
-    readingTime.textContent =
-        `${minutes} minute${minutes > 1 ? "s" : ""} read`;
-
-}
-
-/* ===========================================
-   SMOOTH TOC
-=========================================== */
-
-document
-.querySelectorAll(".toc a")
-.forEach(link=>{
-
-    link.addEventListener("click",e=>{
-
-        e.preventDefault();
-
-        const target=document.querySelector(
-
-            link.getAttribute("href")
-
-        );
-
-        if(target){
-
-            target.scrollIntoView({
-
-                behavior:"smooth",
-
-                block:"start"
-
-            });
-
-        }
-
-    });
 
 });
