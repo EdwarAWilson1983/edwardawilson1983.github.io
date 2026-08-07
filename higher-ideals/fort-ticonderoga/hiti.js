@@ -43,7 +43,9 @@ const words = article.innerText.trim().split(/\s+/).length;
 
 const minutes = Math.max(1, Math.ceil(words / 225));
 
-readtime.textContent = minutes + " minute read";
+readtime.innerHTML =
+    minutes +
+    " <span>min read</span>";
 
 /* ==========================================================
    READING PROGRESS
