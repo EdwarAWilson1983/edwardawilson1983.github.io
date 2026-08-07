@@ -239,6 +239,12 @@ img{
 
     top:30px;
 
+    max-height:calc(100vh - 60px);
+
+    overflow-y:auto;
+
+    padding-right:8px;
+
 }
 
 .toc-box{
@@ -251,6 +257,19 @@ img{
 
     box-shadow:var(--shadow);
 
+}
+
+.sidebar::-webkit-scrollbar{
+    width:8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb{
+    background:#cfa74a;
+    border-radius:8px;
+}
+
+.sidebar::-webkit-scrollbar-track{
+    background:transparent;
 }
 
 main{
