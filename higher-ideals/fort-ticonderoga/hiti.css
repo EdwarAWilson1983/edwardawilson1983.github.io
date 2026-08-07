@@ -432,6 +432,44 @@ main{
 
 }
 
+.reading-info strong{
+
+    display:block;
+
+    font-size:.72rem;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    color:#666;
+
+    margin-bottom:14px;
+
+}
+
+#readtime{
+
+    margin:0;
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+}
+
+#readtime span{
+
+    font-size:1rem;
+
+    font-weight:500;
+
+    color:#555;
+
+}
+
 #readtime{
 
     margin:0;
