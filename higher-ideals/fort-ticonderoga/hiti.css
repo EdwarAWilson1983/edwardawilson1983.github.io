@@ -2106,3 +2106,28 @@ figcaption{
     height: 300px;
     object-fit: cover;
 }
+
+/* =========================================================
+   GENTLEMAN JOHNNY — BURGOYNE PORTRAIT
+   ========================================================= */
+
+.hi-burgoyne-image {
+    max-width: 680px;
+    margin: 2.75rem auto;
+}
+
+.hi-burgoyne-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hi-burgoyne-image figcaption {
+    margin-top: 0.65rem;
+    padding: 0 0.5rem;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: #666;
+    text-align: center;
+    font-style: italic;
+}
