@@ -1622,8 +1622,14 @@ figcaption{
 }
 
 .hero-photo-section img {
+
     width: 100%;
+    height: 600px;
+
     display: block;
+
+    object-fit: cover;
+    object-position: center 35%;
 
     border-radius: 14px;
 
