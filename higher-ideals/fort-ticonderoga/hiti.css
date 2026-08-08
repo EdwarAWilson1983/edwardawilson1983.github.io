@@ -1796,3 +1796,29 @@ figcaption{
     border-radius: 10px;
     display: block;
 }
+
+/* American Revolutionary-era plaque */
+.american-plaque-figure {
+    max-width: 620px;
+    margin: 42px auto 46px;
+}
+
+.american-plaque-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 520px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.american-plaque-figure figcaption {
+    margin-top: 14px;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.92rem;
+    line-height: 1.55;
+    color: #666;
+}
+
