@@ -2009,3 +2009,90 @@ figcaption{
         max-height: 420px;
     }
 }
+
+/* =========================================================
+   TICONDEROGA — AMERICAN FORTRESS IMAGE SYSTEM
+   ========================================================= */
+
+.hi-section-image {
+    margin: 2.5rem auto;
+    max-width: 900px;
+}
+
+.hi-section-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+}
+
+.hi-section-image figcaption {
+    margin-top: 0.65rem;
+    padding: 0 0.5rem;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: #666;
+    text-align: center;
+    font-style: italic;
+}
+
+.hi-image-medium {
+    max-width: 700px;
+}
+
+.hi-image-wide {
+    max-width: 1000px;
+}
+
+
+/* Barracks photographic diptych */
+
+.hi-image-diptych {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    max-width: 1000px;
+    margin: 3rem auto;
+}
+
+.hi-image-diptych figure {
+    margin: 0;
+}
+
+.hi-image-diptych img {
+    display: block;
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.hi-image-diptych figcaption {
+    margin-top: 0.65rem;
+    padding: 0 0.25rem;
+    font-size: 0.82rem;
+    line-height: 1.45;
+    color: #666;
+    text-align: center;
+    font-style: italic;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .hi-image-diptych {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .hi-image-diptych img {
+        height: auto;
+    }
+
+    .hi-section-image {
+        margin: 2rem auto;
+    }
+
+}
