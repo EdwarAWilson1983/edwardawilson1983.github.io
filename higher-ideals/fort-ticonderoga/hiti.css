@@ -1922,14 +1922,19 @@ figcaption{
     margin: 2.75rem 0 3.25rem;
 }
 
+.knox-hero {
+    max-width: 760px;
+    margin: 2.5rem auto 3rem;
+}
+
 .knox-hero img {
     width: 100%;
-    max-height: 620px;
+    max-height: 480px;
     object-fit: cover;
     object-position: center;
     display: block;
     border-radius: 2px;
-    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
 }
 
 .knox-hero figcaption,
