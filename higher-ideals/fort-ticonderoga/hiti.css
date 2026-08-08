@@ -1771,3 +1771,11 @@ figcaption{
     line-height: 1.5;
     color: #666;
 }
+
+.schieffelin-figure img {
+    width: 72%;
+    max-width: 720px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
