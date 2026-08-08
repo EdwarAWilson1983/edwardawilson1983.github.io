@@ -1519,3 +1519,63 @@ figcaption{
     line-height:1.6;
     font-size:.98rem;
 }
+
+/* =========================================================
+   TWO PHOTO GRID
+========================================================= */
+
+.photo-grid-2{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:1.5rem;
+
+    margin:3rem 0;
+
+}
+
+.photo-grid-2 figure{
+
+    margin:0;
+
+}
+
+.photo-grid-2 img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:14px;
+
+    border:1px solid #ddd;
+
+    box-shadow:0 10px 24px rgba(0,0,0,.08);
+
+}
+
+.photo-grid-2 figcaption{
+
+    margin-top:.75rem;
+
+    text-align:center;
+
+    font-style:italic;
+
+    color:#666;
+
+    line-height:1.5;
+
+}
+
+@media(max-width:900px){
+
+.photo-grid-2{
+
+grid-template-columns:1fr;
+
+}
+
+}
