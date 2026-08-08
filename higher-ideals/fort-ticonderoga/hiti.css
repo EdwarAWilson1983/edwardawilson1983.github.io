@@ -1673,7 +1673,7 @@ figcaption{
 
 /* Staircase photo — slightly reduced for visual balance */
 .stairs-figure img {
-    width: 85%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
 }
