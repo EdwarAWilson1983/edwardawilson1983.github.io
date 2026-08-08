@@ -2228,11 +2228,18 @@ figcaption{
 .defiance-cannon-sequence {
     display: grid;
     grid-template-columns: 1.35fr 0.75fr;
-    gap: 20px;
+    gap: 22px;
+
     align-items: start;
+
     max-width: 900px;
     margin: 3rem auto 1rem;
 }
+
+
+/* ==========================================================
+   FIGURES
+   ========================================================== */
 
 .defiance-cannon-sequence figure {
     margin: 0;
@@ -2241,11 +2248,13 @@ figcaption{
 
 
 /* ==========================================================
-   CANNON PHOTO 1
+   PRIMARY PHOTO
    defiance-cannon3.jpg
 
-   Keep almost all of the original photograph.
-   Crop modestly from the TOP only.
+   Large image.
+   Modest crop from the original photograph.
+   Faces remain outside the frame while preserving
+   most of the original scene.
    ========================================================== */
 
 .defiance-cannon-wide {
@@ -2254,43 +2263,47 @@ figcaption{
 
 .defiance-cannon-wide img {
     width: 100%;
-    height: 700px !important;
+    height: 700px;
 
-    object-fit: cover !important;
-    object-position: center 58% !important;
+    object-fit: cover;
+    object-position: center 58%;
 
     display: block;
 
     border-radius: 2px;
-    box-shadow: 0 12px 34px rgba(0, 0, 0, .12);
+
+    box-shadow:
+        0 12px 34px rgba(0, 0, 0, 0.12);
 }
 
 
 /* ==========================================================
-   CANNON PHOTO 2
-   defiance-cannon2.jpg
+   SECONDARY PHOTO
+   defiance-cannon5.jpg
 
+   Landscape photograph.
    NO CROPPING.
-   Preserve the original photograph's aspect ratio.
+   Preserve the complete original image.
    ========================================================== */
 
-.defiance-cannon-detail {
+.defiance-cannon-context {
     width: 100%;
-    max-width: 300px;
-    margin: 40px auto 0;
+
+    margin-top: 40px;
 }
 
-.defiance-cannon-detail img {
-    width: 100%;
-    height: auto !important;
-    max-height: none !important;
-
-    object-fit: contain !important;
-
+.defiance-cannon-context img {
     display: block;
 
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+
     border-radius: 2px;
-    box-shadow: 0 10px 28px rgba(0, 0, 0, .11);
+
+    box-shadow:
+        0 10px 28px rgba(0, 0, 0, 0.11);
 }
 
 
@@ -2300,12 +2313,14 @@ figcaption{
 
 .defiance-cannon-sequence figcaption {
     margin-top: 10px;
+
     text-align: center;
 
-    font-size: .82rem;
+    font-size: 0.82rem;
     line-height: 1.4;
 
     font-style: italic;
+
     color: #666;
 }
 
@@ -2318,13 +2333,26 @@ figcaption{
 
     .defiance-cannon-sequence {
         grid-template-columns: 1fr;
+
         gap: 28px;
+
+        max-width: 100%;
     }
 
-    .defiance-cannon-detail {
-        max-width: 70%;
-        margin: 0 auto;
+
+    .defiance-cannon-wide img {
+        height: auto;
+
+        object-fit: contain;
     }
+
+
+    .defiance-cannon-context {
+        max-width: 100%;
+
+        margin-top: 0;
+    }
+
 }
 
 
