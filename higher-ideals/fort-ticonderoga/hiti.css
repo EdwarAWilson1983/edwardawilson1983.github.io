@@ -1693,3 +1693,17 @@ figcaption{
     margin-top: 1rem;
     text-align: center;
 }
+
+/* Indigenous history photograph */
+.native-american-figure {
+    width: 64%;
+    margin: 2.5rem auto 2rem;
+}
+
+.native-american-figure img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center 48%;
+    display: block;
+}
