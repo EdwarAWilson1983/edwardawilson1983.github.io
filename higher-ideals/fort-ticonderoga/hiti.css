@@ -2016,7 +2016,7 @@ figcaption{
 
 .hi-section-image {
     margin: 2.5rem auto;
-    max-width: 900px;
+    max-width: 700px;
 }
 
 .hi-section-image img {
@@ -2095,4 +2095,8 @@ figcaption{
         margin: 2rem auto;
     }
 
+}
+
+.hi-cannon-image {
+    max-width: 700px;
 }
