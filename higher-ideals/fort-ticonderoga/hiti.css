@@ -1677,3 +1677,19 @@ figcaption{
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Historical maps — smaller than photographic figures */
+.historical-map {
+    max-width: 78%;
+    margin: 3rem auto;
+}
+
+.historical-map img {
+    width: 100%;
+    height: auto;
+}
+
+.historical-map figcaption {
+    margin-top: 1rem;
+    text-align: center;
+}
