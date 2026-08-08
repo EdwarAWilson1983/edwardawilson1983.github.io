@@ -1707,3 +1707,15 @@ figcaption{
     object-position: center 48%;
     display: block;
 }
+
+/* Young Washington historical artwork */
+.washington-figure {
+    width: 70%;
+    margin: 3rem auto 2.5rem;
+}
+
+.washington-figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
