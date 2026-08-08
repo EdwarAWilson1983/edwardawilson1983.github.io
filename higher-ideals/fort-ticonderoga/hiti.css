@@ -2131,3 +2131,190 @@ figcaption{
     text-align: center;
     font-style: italic;
 }
+
+/* ==========================================================
+   HIGHER IDEALS — FORT TICONDEROGA PART I
+   MOUNT DEFIANCE ART DIRECTION
+   Updated: August 8, 2026
+========================================================== */
+
+/*
+   Visual principle:
+   This sequence moves from PLACE → TERRAIN → INTERPRETATION
+   → THREAT → ARTILLERY.
+
+   It is intentionally documentary rather than gallery-like.
+*/
+
+/* ----------------------------------------------------------
+   HERO / PANORAMA
+---------------------------------------------------------- */
+
+.defiance-hero {
+    margin: 2.75rem 0 3.5rem;
+}
+
+.defiance-hero img {
+    width: 100%;
+    max-height: 680px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 2px;
+    box-shadow: 0 16px 42px rgba(0,0,0,.13);
+}
+
+.defiance-hero figcaption,
+.defiance-sign figcaption,
+.defiance-supporting figcaption,
+.defiance-cannon-wide figcaption,
+.defiance-cannon-detail figcaption,
+.defiance-pair figcaption {
+    margin-top: .7rem;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: .78rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* ----------------------------------------------------------
+   TERRAIN + OVERLOOK DIPTYCH
+---------------------------------------------------------- */
+
+.defiance-pair {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    margin: 3.25rem 0 3.5rem;
+}
+
+.defiance-pair figure {
+    margin: 0;
+}
+
+.defiance-pair img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 2px;
+    box-shadow: 0 10px 28px rgba(0,0,0,.10);
+}
+
+/* ----------------------------------------------------------
+   INTERPRETIVE SIGN
+---------------------------------------------------------- */
+
+.defiance-sign {
+    margin: 3.5rem auto;
+    max-width: 860px;
+}
+
+.defiance-sign img {
+    width: 100%;
+    max-height: 620px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 2px;
+    box-shadow: 0 12px 32px rgba(0,0,0,.10);
+}
+
+/* ----------------------------------------------------------
+   CANNON SEQUENCE
+---------------------------------------------------------- */
+
+.defiance-cannon-sequence {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, .65fr);
+    gap: 14px;
+    align-items: start;
+    margin: 3.75rem 0 1rem;
+}
+
+.defiance-cannon-sequence figure {
+    margin: 0;
+}
+
+.defiance-cannon-wide img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 2px;
+    box-shadow: 0 12px 34px rgba(0,0,0,.12);
+}
+
+.defiance-cannon-detail img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 2px;
+    box-shadow: 0 12px 34px rgba(0,0,0,.12);
+}
+
+.image-note {
+    color: #777;
+    font-style: italic;
+}
+
+/* ----------------------------------------------------------
+   ALTERNATE CANNON / VISUAL PAUSE
+---------------------------------------------------------- */
+
+.defiance-supporting {
+    max-width: 760px;
+    margin: 3.75rem auto 2.5rem;
+}
+
+.defiance-supporting img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 2px;
+    box-shadow: 0 14px 38px rgba(0,0,0,.12);
+}
+
+/* ----------------------------------------------------------
+   LIGHTBOX COMPATIBILITY
+---------------------------------------------------------- */
+
+#mount-defiance .article-image {
+    cursor: zoom-in;
+}
+
+/* ----------------------------------------------------------
+   MOBILE
+---------------------------------------------------------- */
+
+@media (max-width: 700px) {
+
+    .defiance-hero {
+        margin-top: 2rem;
+    }
+
+    .defiance-pair,
+    .defiance-cannon-sequence {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .defiance-hero img,
+    .defiance-sign img,
+    .defiance-supporting img {
+        max-height: 440px;
+    }
+
+    .defiance-pair img,
+    .defiance-cannon-wide img,
+    .defiance-cannon-detail img {
+        aspect-ratio: 16 / 11;
+    }
+
+}
