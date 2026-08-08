@@ -1881,34 +1881,34 @@ figcaption{
 
 /* Colonel Benedict Arnold — 1776 portrait */
 .colonel-arnold-figure {
-    max-width: 560px;
-    margin: 44px auto 48px;
+    max-width: 400px;
+    margin: 40px auto 44px;
 }
 
 .colonel-arnold-figure img {
     display: block;
     width: 100%;
     height: auto;
-    max-height: 680px;
+    max-height: 560px;
     object-fit: contain;
-    border-radius: 10px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.12);
 }
 
 .colonel-arnold-figure figcaption {
-    margin-top: 14px;
+    margin-top: 12px;
     text-align: center;
     font-style: italic;
-    font-size: 0.92rem;
-    line-height: 1.55;
+    font-size: 0.9rem;
+    line-height: 1.5;
     color: #666;
 }
 
 .colonel-arnold-figure .figure-source {
-    max-width: 500px;
-    margin: 8px auto 0;
+    max-width: 380px;
+    margin: 7px auto 0;
     text-align: center;
-    font-size: 0.78rem;
-    line-height: 1.45;
+    font-size: 0.75rem;
+    line-height: 1.4;
     color: #888;
 }
