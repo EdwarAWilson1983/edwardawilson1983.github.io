@@ -120,9 +120,9 @@ nav a:last-child{
 }
 
 .right-column img{
-  width:72%;
-  max-width:720px;
-  height:auto;
+    width:55%;
+    max-width:500px;
+    height:auto;
 }
 
 .cards{
