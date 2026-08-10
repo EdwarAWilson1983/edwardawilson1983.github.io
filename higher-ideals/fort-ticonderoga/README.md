@@ -40,3 +40,5 @@ Mount Defiance Panorama
 ## Subtitle
 
 A Walk Through Three Centuries of American History
+
+<!-- Pages deployment refresh: August 9, 2026 -->
