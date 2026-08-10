@@ -2507,6 +2507,7 @@ figcaption{
 
 .source-entry p {
     margin: 0 0 1rem;
+    text-align: left;
 }
 
 .source-entry .source-detail {
