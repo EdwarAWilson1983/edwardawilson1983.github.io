@@ -188,15 +188,10 @@ img{
 
 
 .site-logo{
-
-    width:96px;
-
-    height:96px;
-
+    width:116px;
+    height:116px;
     object-fit:contain;
-
     flex-shrink:0;
-
 }
 
 .top-nav{
