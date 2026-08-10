@@ -60,8 +60,19 @@ nav a:last-child{
   color:var(--gold);
 }
 
+.social-links{
+  display:inline-flex;
+  gap:14px;
+  margin-right:32px;
+}
+
+.social-links a{
+  margin-left:0;
+  font-size:.85rem;
+}
+
 .social-links a:hover{
-    color:var(--gold);
+  color:var(--gold);
 }
 
 .editorial-panel{
