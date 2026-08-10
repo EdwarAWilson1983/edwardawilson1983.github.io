@@ -60,6 +60,10 @@ nav a:last-child{
   color:var(--gold);
 }
 
+.social-links a:hover{
+    color:var(--gold);
+}
+
 .editorial-panel{
   display:grid;
   grid-template-columns:42% 58%;
