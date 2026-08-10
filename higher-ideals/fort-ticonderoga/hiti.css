@@ -2406,3 +2406,291 @@ figcaption{
         font-size: 0.86rem;
     }
 }
+
+/* =========================================================
+   HIGHER IDEALS — SOURCES & FURTHER READING
+   Fort Ticonderoga Part I
+   ========================================================= */
+
+.sources-section {
+    margin-top: 5rem;
+    padding-top: 4rem;
+    border-top: 1px solid rgba(20, 50, 95, 0.18);
+}
+
+.sources-section .sources-intro {
+    max-width: 850px;
+    margin: 0 auto 3.5rem;
+    text-align: center;
+}
+
+.sources-section .sources-intro p {
+    margin: 0 auto 1rem;
+}
+
+.sources-section .sources-note-inline {
+    font-size: 0.9rem;
+    font-style: italic;
+    opacity: 0.75;
+}
+
+
+/* ---------------------------------------------------------
+   MAJOR SOURCE GROUPS
+   --------------------------------------------------------- */
+
+.source-section-block {
+    max-width: 1100px;
+    margin: 0 auto 4.5rem;
+}
+
+.source-section-heading {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(20, 50, 95, 0.18);
+}
+
+.source-section-number {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    border: 1px solid #c9a23f;
+    color: #123b73;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.source-section-heading .section-kicker {
+    margin-bottom: 0.3rem;
+}
+
+.source-section-heading h3 {
+    margin: 0;
+}
+
+
+/* ---------------------------------------------------------
+   SOURCE LISTS
+   --------------------------------------------------------- */
+
+.source-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+}
+
+.source-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.75rem;
+}
+
+.source-entry {
+    padding: 1.75rem;
+    background: rgba(248, 246, 240, 0.72);
+    border: 1px solid rgba(201, 162, 63, 0.25);
+    border-radius: 2px;
+}
+
+.source-entry h4 {
+    margin: 0 0 0.9rem;
+    color: #123b73;
+}
+
+.source-entry p {
+    margin: 0 0 1rem;
+}
+
+.source-entry .source-detail {
+    font-size: 0.92rem;
+    opacity: 0.88;
+}
+
+.source-link {
+    display: inline-block;
+    margin-top: 0.35rem;
+    color: #123b73;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.source-link:hover {
+    text-decoration: underline;
+}
+
+
+/* ---------------------------------------------------------
+   VISUAL MATERIALS
+   --------------------------------------------------------- */
+
+.source-section-block--visual {
+    margin-top: 5rem;
+}
+
+.visual-credit-panel {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: #123b73;
+    color: #f8f6f0;
+    border-left: 5px solid #c9a23f;
+}
+
+.visual-credit-panel h4 {
+    margin: 0 0 0.75rem;
+    color: #ffffff;
+}
+
+.visual-credit-panel p {
+    max-width: 800px;
+    margin: 0 0 1rem;
+}
+
+.visual-credit-panel .copyright-credit {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+
+/* ---------------------------------------------------------
+   VISUAL SOURCE LIST
+   --------------------------------------------------------- */
+
+.visual-source-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    border-top: 1px solid rgba(20, 50, 95, 0.18);
+}
+
+.visual-source {
+    display: grid;
+    grid-template-columns: 3rem minmax(0, 1fr);
+    gap: 1rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgba(20, 50, 95, 0.14);
+}
+
+.visual-source-number {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 0.15rem;
+    color: #c9a23f;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.visual-source h4 {
+    margin: 0 0 0.45rem;
+    color: #123b73;
+}
+
+.visual-source p {
+    margin: 0 0 0.65rem;
+    font-size: 0.92rem;
+}
+
+.visual-source a {
+    color: #123b73;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.visual-source a:hover {
+    text-decoration: underline;
+}
+
+
+/* ---------------------------------------------------------
+   CLOSING RESEARCH NOTE
+   --------------------------------------------------------- */
+
+.sources-closing-note {
+    max-width: 850px;
+    margin: 4rem auto 0;
+    padding: 1.5rem 1.75rem;
+    border-top: 1px solid #c9a23f;
+    border-bottom: 1px solid rgba(20, 50, 95, 0.18);
+    text-align: center;
+}
+
+.sources-closing-note strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #123b73;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.sources-closing-note p {
+    margin: 0;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+
+/* ---------------------------------------------------------
+   RESPONSIVE
+   --------------------------------------------------------- */
+
+@media (max-width: 800px) {
+
+    .sources-section {
+        margin-top: 3.5rem;
+        padding-top: 3rem;
+    }
+
+    .source-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .source-section-block {
+        margin-bottom: 3.5rem;
+    }
+
+    .source-section-heading {
+        gap: 0.9rem;
+    }
+
+    .source-section-number {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .source-entry {
+        padding: 1.4rem;
+    }
+
+}
+
+
+@media (max-width: 520px) {
+
+    .sources-section .sources-intro {
+        text-align: left;
+    }
+
+    .source-section-heading {
+        align-items: center;
+    }
+
+    .visual-source {
+        grid-template-columns: 2.25rem minmax(0, 1fr);
+        gap: 0.75rem;
+    }
+
+    .visual-credit-panel {
+        padding: 1.4rem;
+    }
+
+}
