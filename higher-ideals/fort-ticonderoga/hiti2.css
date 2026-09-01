@@ -2745,8 +2745,8 @@ figcaption{
 }
 
 .about-author-copy p {
-    margin: 0;
-    max-width: 850px;
+   margin: 0 auto;
+  max-width: 720px;
     line-height: 1.8;
 }
 
