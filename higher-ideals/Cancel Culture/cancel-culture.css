@@ -222,23 +222,24 @@ img{
 
 }
 
-.social-links{
-    display:flex;
-    align-items:center;
-    gap:18px;
-    margin-left:8px;
-    padding-left:22px;
-    border-left:1px solid rgba(255,255,255,.35);
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-left: 18px;
+    padding-left: 22px;
+    border-left: 1px solid rgba(255,255,255,.35);
+    transform: translateY(25px);
 }
 
-.social-links a{
-    color:var(--gold);
-    font-size:21px;
-    line-height:1;
+.social-links a {
+    color: var(--gold);
+    font-size: 22px;
+    line-height: 1;
 }
 
-.social-links a:hover{
-    color:white;
+.social-links a:hover {
+    color: white;
 }
 
 .site-brand h1{
