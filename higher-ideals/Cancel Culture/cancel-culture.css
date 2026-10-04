@@ -1133,22 +1133,13 @@ figure:has(img[src*="vietnam_war_protestors.jpg"]) img{
 
 .about-author-photo {
     position: relative;
-    width: 250px;
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-}
-
-.about-author-photo {
-    position: relative;
     width: 260px;
     height: 260px;
     min-width: 260px;
     min-height: 260px;
     flex: 0 0 260px;
     display: block;
+    margin-left: -25px;
 }
 
 .about-author-photo img {
