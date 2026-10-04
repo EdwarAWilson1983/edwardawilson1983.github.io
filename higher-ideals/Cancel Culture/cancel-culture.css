@@ -1108,6 +1108,103 @@ figure:has(img[src*="vietnam_war_protestors.jpg"]) img{
     max-width:none;
 }
 
+/* ============================================================
+   ABOUT THE AUTHOR
+   ============================================================ */
+
+.about-author {
+    width: 90%;
+    max-width: 900px;
+    margin: 70px auto 50px auto;
+    padding: 40px;
+
+    background: #f7efd9;
+    border: 1px solid #d9b85a;
+    border-radius: 22px;
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.10);
+
+    display: flex;
+    align-items: center;
+    gap: 45px;
+
+    box-sizing: border-box;
+}
+
+.about-author-photo {
+    flex: 0 0 280px;
+}
+
+.about-author-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.16);
+}
+
+.about-author-content {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.about-author-label {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    margin-bottom: 6px;
+}
+
+.about-author-content h2 {
+    margin: 0 0 12px 0;
+    color: #0b2c6b;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.15rem;
+    line-height: 1.05;
+    font-weight: normal;
+}
+
+.about-author-content .author-title {
+    margin: 0 0 28px 0;
+    color: #0b2c6b;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.15rem;
+    line-height: 1.5;
+}
+
+.about-author-content > p:last-child {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.08rem;
+    line-height: 1.8;
+    text-align: left;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .about-author {
+        width: 92%;
+        padding: 28px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 28px;
+    }
+
+    .about-author-photo {
+        flex: none;
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .about-author-content h2 {
+        font-size: 2rem;
+    }
+
+}
 /* ==========================================================
    IMAGE LIGHTBOX
 ========================================================== */
