@@ -1072,17 +1072,17 @@ figcaption{
 
 /* INDIVIDUAL IMAGE SIZE ADJUSTMENTS */
 img[src*="Lovejoy.jpg"]{
-    width:65%;
+    width:100%;
     max-width:350px;
 }
 
 img[src*="common-sense.jpg"]{
-    width:65%;
+    width:100%;
     max-width:450px;
 }
 
 img[src*="vietnam_war_protestors.jpg"]{
-    width:65%;
+    width:100%;
     max-width:450px;
 }
 
