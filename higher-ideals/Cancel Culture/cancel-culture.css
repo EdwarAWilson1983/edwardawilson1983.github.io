@@ -3067,3 +3067,188 @@ figure:has(img[src*="vietnam_war_protestors.jpg"]) img{
         font-size: 1.25rem;
     }
 }
+
+/* ==========================================================
+   HIGHER IDEALS — FINAL ABOUT THE AUTHOR
+   Cancel Culture
+   FINAL OVERRIDE
+   ========================================================== */
+
+.about-author {
+    width: 90%;
+    max-width: 900px;
+    margin: 60px auto 30px;
+    padding: 42px 48px;
+
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 38px;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    background: #f4ecd5;
+    border: 1px solid rgba(200,160,60,.35);
+    border-radius: 22px;
+    box-shadow: 0 14px 35px rgba(0,0,0,.08);
+}
+
+
+/* PHOTO */
+
+.about-author-image {
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-author-image img {
+    width: 185px;
+    height: 185px;
+
+    object-fit: cover;
+    object-position: center;
+
+    display: block;
+
+    border-radius: 14px;
+    border: none;
+
+    box-shadow: 0 10px 24px rgba(0,0,0,.16);
+}
+
+
+/* GOLD CIRCLE BEHIND PHOTO */
+
+.about-author-image {
+    position: relative;
+}
+
+.about-author-image::before {
+    content: "";
+
+    position: absolute;
+
+    width: 175px;
+    height: 175px;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    border: 5px solid #c8a03c;
+    border-radius: 50%;
+
+    z-index: 0;
+}
+
+.about-author-image img {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* TEXT */
+
+.about-author-content {
+    min-width: 0;
+    max-width: none;
+}
+
+.about-author-label {
+    margin: 0 0 8px;
+
+    color: #6d6d6d;
+
+    font-family: Arial, sans-serif;
+    font-size: .82rem;
+    font-weight: 600;
+
+    letter-spacing: .16em;
+    line-height: 1.6;
+}
+
+
+/* AUTHOR NAME */
+
+.about-author-content h2 {
+    margin: 0 0 18px;
+
+    color: var(--navy);
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 2.45rem;
+    line-height: 1.05;
+    font-weight: 500;
+
+    white-space: nowrap;
+}
+
+
+/* TITLE */
+
+.about-author-content h3 {
+    margin: 0 0 24px;
+
+    color: #1d3557;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 1.35rem;
+    line-height: 1.35;
+    font-weight: 600;
+}
+
+
+/* BIO */
+
+.about-author-content p {
+    margin: 0;
+
+    max-width: 700px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.05rem;
+    line-height: 1.75;
+
+    text-align: left;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .about-author {
+        width: 92%;
+
+        grid-template-columns: 1fr;
+
+        gap: 28px;
+
+        padding: 34px 28px;
+
+        text-align: center;
+    }
+
+    .about-author-image {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .about-author-content {
+        width: 100%;
+    }
+
+    .about-author-content h2 {
+        white-space: normal;
+        font-size: 2.2rem;
+    }
+
+    .about-author-content p {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+}
