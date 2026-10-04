@@ -3121,25 +3121,6 @@ figure:has(img[src*="vietnam_war_protestors.jpg"]) img{
     position: relative;
 }
 
-.about-author-image::before {
-    content: "";
-
-    position: absolute;
-
-    width: 175px;
-    height: 175px;
-
-    left: 50%;
-    top: 50%;
-
-    transform: translate(-50%, -50%);
-
-    border: 5px solid #c8a03c;
-    border-radius: 50%;
-
-    z-index: 0;
-}
-
 .about-author-image img {
     position: relative;
     z-index: 1;
