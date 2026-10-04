@@ -1071,19 +1071,40 @@ figcaption{
 }
 
 /* INDIVIDUAL IMAGE SIZE ADJUSTMENTS */
-img[src*="Lovejoy.jpg"]{
-    width:100%;
+figure:has(img[src*="Lovejoy.jpg"]){
+    width:45%;
     max-width:350px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
-img[src*="common-sense.jpg"]{
+figure:has(img[src*="Lovejoy.jpg"]) img{
     width:100%;
-    max-width:450px;
+    max-width:none;
 }
 
-img[src*="vietnam_war_protestors.jpg"]{
+figure:has(img[src*="common-sense.jpg"]){
+    width:55%;
+    max-width:500px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+figure:has(img[src*="common-sense.jpg"]) img{
     width:100%;
-    max-width:450px;
+    max-width:none;
+}
+
+figure:has(img[src*="vietnam_war_protestors.jpg"]){
+    width:65%;
+    max-width:650px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+figure:has(img[src*="vietnam_war_protestors.jpg"]) img{
+    width:100%;
+    max-width:none;
 }
 
 /* ==========================================================
