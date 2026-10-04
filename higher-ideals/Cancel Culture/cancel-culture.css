@@ -1070,6 +1070,22 @@ figcaption{
     margin-right:auto;
 }
 
+/* INDIVIDUAL IMAGE SIZE ADJUSTMENTS */
+img[src*="Lovejoy.jpg"]{
+    width:45%;
+    max-width:450px;
+}
+
+img[src*="common-sense.jpg"]{
+    width:55%;
+    max-width:550px;
+}
+
+img[src*="vietnam_war_protestors.jpg"]{
+    width:65%;
+    max-width:650px;
+}
+
 /* ==========================================================
    IMAGE LIGHTBOX
 ========================================================== */
