@@ -1143,25 +1143,29 @@ figure:has(img[src*="vietnam_war_protestors.jpg"]) img{
 
 .about-author-photo {
     position: relative;
-    width: 300px;
-    height: 300px;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 260px;
+    height: 260px;
+    min-width: 260px;
+    min-height: 260px;
+    flex: 0 0 260px;
+    display: block;
 }
 
 .about-author-photo img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    object-position: center;
     display: block;
+    width: 260px !important;
+    height: 260px !important;
+    min-width: 260px;
+    min-height: 260px;
+
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center center;
 
     border-radius: 50%;
     border: 5px solid #cfa74a;
-
     box-sizing: border-box;
+
     box-shadow: 0 10px 20px rgba(0,0,0,0.18);
 }
 
