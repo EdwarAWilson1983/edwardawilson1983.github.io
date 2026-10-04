@@ -1132,15 +1132,36 @@ figure:has(img[src*="vietnam_war_protestors.jpg"]) img{
 }
 
 .about-author-photo {
-    flex: 0 0 280px;
+    width: 220px;
+    min-width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0;
 }
 
 .about-author-photo img {
-    display: block;
-    width: 100%;
-    height: auto;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
     border-radius: 14px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.16);
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 10px 22px rgba(0,0,0,0.16);
+}
+
+.about-author-photo::before {
+    content: "";
+    position: absolute;
+    width: 165px;
+    height: 165px;
+    border: 5px solid #cfa74a;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
 .about-author-content {
@@ -1156,13 +1177,12 @@ figure:has(img[src*="vietnam_war_protestors.jpg"]) img{
     margin-bottom: 6px;
 }
 
-.about-author-content h2 {
-    margin: 0 0 12px 0;
-    color: #0b2c6b;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 2.15rem;
+.about-author h2 {
+    margin: 0 0 14px 0;
+    font-size: 38px;
     line-height: 1.05;
-    font-weight: normal;
+    color: #0b2c6b;
+    white-space: nowrap;
 }
 
 .about-author-content .author-title {
