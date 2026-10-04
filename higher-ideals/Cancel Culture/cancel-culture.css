@@ -1071,16 +1071,17 @@ figcaption{
 }
 
 /* INDIVIDUAL IMAGE SIZE ADJUSTMENTS */
-figure:has(img[src*="Lovejoy.jpg"]){
-    width:45%;
-    max-width:350px;
-    margin-left:auto;
-    margin-right:auto;
+/* LOVEJOY — COMPACT PORTRAIT */
+.article-image:has(img[src*="Lovejoy.jpg"]){
+    width:45% !important;
+    max-width:350px !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
 }
 
-figure:has(img[src*="Lovejoy.jpg"]) img{
-    width:100%;
-    max-width:none;
+.article-image:has(img[src*="Lovejoy.jpg"]) img{
+    width:100% !important;
+    max-width:none !important;
 }
 
 figure:has(img[src*="common-sense.jpg"]){
