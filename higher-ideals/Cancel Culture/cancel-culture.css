@@ -1097,8 +1097,8 @@ figure:has(img[src*="common-sense.jpg"]) img{
 }
 
 figure:has(img[src*="vietnam_war_protestors.jpg"]){
-    width:65%;
-    max-width:650px;
+    width:55%;
+    max-width:550px;
     margin-left:auto;
     margin-right:auto;
 }
