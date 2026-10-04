@@ -1072,12 +1072,12 @@ figcaption{
 
 /* INDIVIDUAL IMAGE SIZE ADJUSTMENTS */
 img[src*="Lovejoy.jpg"]{
-    width:45%;
+    width:65%;
     max-width:350px;
 }
 
 img[src*="common-sense.jpg"]{
-    width:55%;
+    width:65%;
     max-width:450px;
 }
 
