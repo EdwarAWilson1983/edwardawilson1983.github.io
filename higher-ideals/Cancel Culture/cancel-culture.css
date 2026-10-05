@@ -3250,3 +3250,9 @@ figure:has(img[src*="vietnam_war_protestors.jpg"]) img{
     box-shadow: 0 10px 24px rgba(0,0,0,.16);
    
 }
+
+/* Remove the old decorative circle behind the author photo */
+.about-author-image::before {
+    content: none !important;
+    display: none !important;
+}
