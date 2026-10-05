@@ -3081,28 +3081,6 @@ figure:has(img[src*="vietnam_war_protestors.jpg"]) img{
 
 /* PHOTO */
 
-.about-author-image {
-    width: 220px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.about-author-image img {
-    width: 185px;
-    height: 185px;
-
-    object-fit: cover;
-    object-position: center;
-
-    display: block;
-
-    border-radius: 14px;
-    border: none;
-
-    box-shadow: 0 10px 24px rgba(0,0,0,.16);
-}
-
 
 /* GOLD CIRCLE BEHIND PHOTO */
 
