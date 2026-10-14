@@ -3216,8 +3216,8 @@ figure:has(img[src*="vietnam_war_protestors.jpg"]) img{
 
 
 /* ==========================================================
-   HIGHER IDEALS — PART III RESEARCH & SOURCES PRESENTATION
-   Updated October 14, 2026
+   body.cancel-culture-part-iii HIGHER IDEALS — PART III RESEARCH & SOURCES PRESENTATION
+   Updated October 14, body.cancel-culture-part-iii 2026
 ========================================================== */
 body.cancel-culture-part-iii .sources-section {
   position: relative;
@@ -3227,6 +3227,8 @@ body.cancel-culture-part-iii .sources-section {
   background: linear-gradient(180deg, rgba(201,162,63,.10) 0, rgba(243,241,235,.35) 13rem, rgba(255,255,255,.62) 100%);
   border-radius: 8px;
 }
+
+
 body.cancel-culture-part-iii .sources-section::before {
   content: "";
   position: absolute;
@@ -3234,11 +3236,15 @@ body.cancel-culture-part-iii .sources-section::before {
   height: 5px;
   background: linear-gradient(90deg, #c9a23f 0%, #e7d49a 48%, #123b73 100%);
 }
+
+
 body.cancel-culture-part-iii .sources-heading-wrap {
   max-width: 1000px;
   margin: 0 auto 2rem;
   text-align: center;
 }
+
+
 body.cancel-culture-part-iii .sources-eyebrow {
   margin: 0 0 .6rem;
   color: #a47b19;
@@ -3248,7 +3254,11 @@ body.cancel-culture-part-iii .sources-eyebrow {
   letter-spacing: .19em;
   text-transform: uppercase;
 }
+
+
 body.cancel-culture-part-iii .sources-eyebrow span { color: #c9a23f; margin-right: .35rem; }
+
+
 body.cancel-culture-part-iii .sources-heading-wrap h2 {
   margin: 0;
   color: #123b73;
@@ -3256,17 +3266,23 @@ body.cancel-culture-part-iii .sources-heading-wrap h2 {
   line-height: 1.1;
   letter-spacing: -.025em;
 }
+
+
 body.cancel-culture-part-iii .sources-heading-deck {
   margin: .9rem 0 0;
   color: #596474;
   font-size: 1rem;
   font-style: italic;
 }
+
+
 body.cancel-culture-part-iii .sources-gold-rule {
   display: block; width: 86px; height: 4px;
   margin: 1.4rem auto 0;
   background: #c9a23f;
 }
+
+
 body.cancel-culture-part-iii .sources-section .sources-intro {
   max-width: 920px;
   margin: 0 auto 3.5rem;
@@ -3277,27 +3293,45 @@ body.cancel-culture-part-iii .sources-section .sources-intro {
   box-shadow: 0 12px 30px rgba(19,37,62,.045);
   text-align: left;
 }
+
+
 body.cancel-culture-part-iii .sources-section .sources-intro p { font-size: .97rem; line-height: 1.7; }
+
+
 body.cancel-culture-part-iii .sources-section .sources-note-inline {
   margin-top: .85rem; padding-top: .85rem;
   border-top: 1px solid rgba(18,59,115,.12);
   font-size: .83rem; line-height: 1.6; color: #626b76;
 }
+
+
 body.cancel-culture-part-iii .source-section-block { margin-bottom: 3.7rem; }
+
+
 body.cancel-culture-part-iii .source-section-heading {
   align-items: center; gap: 1rem; margin-bottom: 1.5rem; padding: 1rem 1.2rem;
   background: linear-gradient(90deg, rgba(18,59,115,.07), rgba(201,162,63,.055));
   border: 1px solid rgba(18,59,115,.10); border-bottom: 2px solid #c9a23f;
 }
+
+
 body.cancel-culture-part-iii .source-section-number {
   width: 2.65rem; height: 2.65rem; background: #123b73; color: #fff; border: 1px solid #c9a23f;
   box-shadow: 3px 3px 0 rgba(201,162,63,.22);
 }
+
+
 body.cancel-culture-part-iii .source-section-heading .section-kicker {
   color: #a47b19; font-family: Inter, Arial, sans-serif; font-size: .68rem; font-weight: 700; letter-spacing: .13em;
 }
+
+
 body.cancel-culture-part-iii .source-section-heading h3 { color: #123b73; font-size: clamp(1.35rem, 2vw, 1.75rem); line-height: 1.25; }
+
+
 body.cancel-culture-part-iii .source-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.15rem; }
+
+
 body.cancel-culture-part-iii .source-entry {
   position: relative; padding: 1.5rem 1.5rem 1.35rem;
   background: rgba(255,255,255,.88); border: 1px solid rgba(18,59,115,.12);
@@ -3305,38 +3339,78 @@ body.cancel-culture-part-iii .source-entry {
   box-shadow: 0 8px 22px rgba(19,37,62,.045);
   transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
 }
+
+
 body.cancel-culture-part-iii .source-entry:hover { transform: translateY(-2px); border-color: rgba(201,162,63,.55); box-shadow: 0 13px 28px rgba(19,37,62,.085); }
+
+
 body.cancel-culture-part-iii .source-entry h4 { font-size: 1.12rem; line-height: 1.35; margin-bottom: .7rem; }
+
+
 body.cancel-culture-part-iii .source-entry p { font-size: .91rem; line-height: 1.65; }
+
+
 body.cancel-culture-part-iii .source-link { padding-bottom: 2px; border-bottom: 1px solid rgba(18,59,115,.25); font-size: .88rem; line-height: 1.5; }
+
+
 body.cancel-culture-part-iii .source-link:hover { border-bottom-color: #c9a23f; text-decoration: none; }
+
+
 body.cancel-culture-part-iii .sources-current-status {
   margin: -.25rem 0 1.25rem; padding: 1rem 1.2rem;
   background: #fff8e6; border: 1px solid rgba(201,162,63,.45); border-left: 4px solid #c9a23f;
   color: #4c4535; font-size: .88rem; line-height: 1.65;
 }
+
+
 body.cancel-culture-part-iii .source-section-block--visual { margin-top: 4.5rem; }
+
+
 body.cancel-culture-part-iii .visual-credit-panel { border-radius: 5px; box-shadow: 0 12px 28px rgba(19,37,62,.09); }
+
+
 body.cancel-culture-part-iii .sources-closing-note {
   max-width: 900px; margin: 1rem auto 0; padding: 1.25rem 1.5rem;
   border-top: 1px solid rgba(18,59,115,.18); color: #5c6470; text-align: center;
   font-size: .86rem; font-style: italic; line-height: 1.65;
 }
+
+
 @media (max-width: 800px) {
-  body.cancel-culture-part-iii .sources-section { margin-top: 3.5rem; padding: 3rem 1rem 2rem; }
-  body.cancel-culture-part-iii .sources-section .sources-intro { padding: 1.1rem; }
-  body.cancel-culture-part-iii .source-grid { grid-template-columns: 1fr; }
-  body.cancel-culture-part-iii .source-section-heading { align-items: flex-start; padding: .85rem; }
+  
+body.cancel-culture-part-iii .sources-section { margin-top: 3.5rem; padding: 3rem 1rem 2rem; }
+
+  
+body.cancel-culture-part-iii .sources-section .sources-intro { padding: 1.1rem; }
+
+  
+body.cancel-culture-part-iii .source-grid { grid-template-columns: 1fr; }
+
+  
+body.cancel-culture-part-iii .source-section-heading { align-items: flex-start; padding: .85rem; }
+
 }
-@media (prefers-reduced-motion: reduce) { body.cancel-culture-part-iii .source-entry { transition: none; } body.cancel-culture-part-iii body.cancel-culture-part-iii .source-entry:hover { transform: none; } }
+
+
+@media (prefers-reduced-motion: reduce) { 
+body.cancel-culture-part-iii .source-entry { transition: none; }
+ 
+body.cancel-culture-part-iii body.cancel-culture-part-iii .source-entry:hover { transform: none; }
+ }
+
+
 
 /* ==========================================================
    PART III — VISUAL CREDITS: READABILITY + BALANCED WIDTH
    Scoped only to Part III; Parts I and II remain untouched.
 ========================================================== */
+
+
 body.cancel-culture-part-iii .source-section-block--visual {
   margin-top: 2.5rem;
 }
+
+
 body.cancel-culture-part-iii .source-section-block--visual .visual-credit-panel {
   box-sizing: border-box;
   width: 100%;
@@ -3350,12 +3424,16 @@ body.cancel-culture-part-iii .source-section-block--visual .visual-credit-panel 
   border-radius: 5px;
   box-shadow: 0 8px 22px rgba(19, 37, 62, .06);
 }
+
+
 body.cancel-culture-part-iii .source-section-block--visual .visual-credit-panel h4 {
   max-width: none;
   margin: 0 0 1rem;
   color: #123b73;
   text-align: center;
 }
+
+
 body.cancel-culture-part-iii .source-section-block--visual .visual-credit-panel p {
   max-width: none;
   margin: 0 auto 1rem;
@@ -3363,6 +3441,8 @@ body.cancel-culture-part-iii .source-section-block--visual .visual-credit-panel 
   line-height: 1.7;
   text-align: left;
 }
+
+
 body.cancel-culture-part-iii .source-section-block--visual .visual-credit-panel .copyright-credit {
   margin: 1.1rem auto 0;
   padding-top: 1rem;
@@ -3372,16 +3452,26 @@ body.cancel-culture-part-iii .source-section-block--visual .visual-credit-panel 
   font-size: .9rem;
   line-height: 1.65;
 }
+
+
 @media (max-width: 800px) {
-  body.cancel-culture-part-iii .source-section-block--visual {
+  
+body.cancel-culture-part-iii .source-section-block--visual {
     margin-top: 2rem;
   }
-  body.cancel-culture-part-iii .source-section-block--visual .visual-credit-panel {
+
+  
+body.cancel-culture-part-iii .source-section-block--visual .visual-credit-panel {
     padding: 1.1rem;
   }
+
 }
 
+
+
 /* Higher Ideals Part III — antique-gold source card outlines */
+
+
 body.cancel-culture-part-iii .source-entry {
   background: #f8f6f0;
   border: 1px solid #cfa74a;
@@ -3389,6 +3479,8 @@ body.cancel-culture-part-iii .source-entry {
   border-radius: 3px;
   box-shadow: 0 5px 16px rgba(11, 44, 107, .045);
 }
+
+
 body.cancel-culture-part-iii .source-entry:hover {
   border-color: #0b2c6b;
   border-top-color: #cfa74a;
@@ -3396,17 +3488,23 @@ body.cancel-culture-part-iii .source-entry:hover {
 }
 
 
+
+
 /* ==========================================================
    PART III — RESEARCH HEADER + INTRO ALIGNMENT
    Requested October 14, 2026
    Scoped only to Part III.
 ========================================================== */
+
+
 body.cancel-culture-part-iii .sources-section {
   display: flow-root;
   clear: both;
   width: 100%;
   box-sizing: border-box;
 }
+
+
 body.cancel-culture-part-iii .sources-heading-wrap {
   display: block;
   position: relative;
@@ -3418,9 +3516,9 @@ body.cancel-culture-part-iii .sources-heading-wrap {
   margin: 0 auto 2rem;
   text-align: center;
 }
-body.cancel-culture-part-iii .sources-heading-wrap .sources-eyebrow,
-body.cancel-culture-part-iii .sources-heading-wrap h2,
-body.cancel-culture-part-iii .sources-heading-wrap .sources-heading-deck {
+
+
+body.cancel-culture-part-iii .sources-heading-wrap .sources-eyebrow, body.cancel-culture-part-iii .sources-heading-wrap h2, body.cancel-culture-part-iii .sources-heading-wrap .sources-heading-deck {
   display: block;
   width: 100%;
   max-width: none;
@@ -3428,6 +3526,8 @@ body.cancel-culture-part-iii .sources-heading-wrap .sources-heading-deck {
   margin-right: auto;
   text-align: center;
 }
+
+
 body.cancel-culture-part-iii .sources-section .sources-intro {
   width: 100%;
   max-width: 1080px;
@@ -3440,50 +3540,79 @@ body.cancel-culture-part-iii .sources-section .sources-intro {
   box-shadow: none;
   text-align: center;
 }
+
+
 body.cancel-culture-part-iii .sources-section .sources-intro p {
   max-width: 900px;
   margin: 0 auto 1rem;
   text-align: center;
 }
+
+
 body.cancel-culture-part-iii .sources-section .sources-intro .sources-note-inline {
   margin: .85rem auto 0;
   padding-top: .85rem;
   border-top: 1px solid rgba(207, 167, 74, .45);
   text-align: center;
 }
+
+
 /* Stronger antique-gold outlines on each source card */
+
+
 body.cancel-culture-part-iii .source-entry {
   border: 2px solid #cfa74a;
   border-top: 4px solid #cfa74a;
 }
+
+
 body.cancel-culture-part-iii .source-entry:hover {
   border-color: #0b2c6b;
   border-top-color: #cfa74a;
 }
+
+
 @media (max-width: 800px) {
-  body.cancel-culture-part-iii .sources-heading-wrap { width: 100%; }
-  body.cancel-culture-part-iii .sources-section .sources-intro { padding: 1.1rem; }
+  
+body.cancel-culture-part-iii .sources-heading-wrap { width: 100%; }
+
+  
+body.cancel-culture-part-iii .sources-section .sources-intro { padding: 1.1rem; }
+
 }
+
+
 /* ==========================================================
    PART III — FINAL AUTHOR CARD AND PHOTO OUTLINES
    Requested October 14, 2026. Scoped to this page's author card.
 ========================================================== */
+
+
 body.cancel-culture-part-iii .about-author {
   border: 2px solid #cfa74a;
   box-shadow: 0 16px 38px rgba(11, 44, 107, .12),
               0 0 0 1px rgba(207, 167, 74, .16);
 }
+
+
 body.cancel-culture-part-iii .about-author-image img {
   border: 3px solid #cfa74a !important;
   border-radius: 50% !important;
   box-sizing: border-box;
   box-shadow: 0 8px 22px rgba(11, 44, 107, .18);
 }
+
+
 @media (max-width: 800px) {
-  body.cancel-culture-part-iii .about-author {
+  
+body.cancel-culture-part-iii .about-author {
     border-width: 2px;
   }
-  body.cancel-culture-part-iii .about-author-image img {
+
+  
+body.cancel-culture-part-iii .about-author-image img {
     border-width: 3px !important;
   }
+
 }
+
