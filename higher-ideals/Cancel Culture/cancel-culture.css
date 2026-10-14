@@ -3464,59 +3464,26 @@ body.cancel-culture-part-iii .source-entry:hover {
   body.cancel-culture-part-iii .sources-heading-wrap { width: 100%; }
   body.cancel-culture-part-iii .sources-section .sources-intro { padding: 1.1rem; }
 }
-
-
 /* ==========================================================
-   PART III — VERIFIED HARD OVERRIDES (Oct 14, 2026)
-   Force requested visual-credit, header, intro and card treatments.
-   All rules are scoped to this page only.
+   PART III — FINAL AUTHOR CARD AND PHOTO OUTLINES
+   Requested October 14, 2026. Scoped to this page's author card.
 ========================================================== */
-body.cancel-culture-part-iii section.sources-section {
-  display: block !important; float: none !important; clear: both !important;
-  width: 100% !important; max-width: none !important; box-sizing: border-box !important;
+body.cancel-culture-part-iii .about-author {
+  border: 2px solid #cfa74a;
+  box-shadow: 0 16px 38px rgba(11, 44, 107, .12),
+              0 0 0 1px rgba(207, 167, 74, .16);
 }
-body.cancel-culture-part-iii section.sources-section > .sources-heading-wrap {
-  display: block !important; position: relative !important; float: none !important; clear: both !important;
-  width: min(100%, 1000px) !important; max-width: 1000px !important;
-  margin: 0 auto 2rem !important; padding: 0 !important; box-sizing: border-box !important; text-align: center !important;
+body.cancel-culture-part-iii .about-author-image img {
+  border: 3px solid #cfa74a !important;
+  border-radius: 50% !important;
+  box-sizing: border-box;
+  box-shadow: 0 8px 22px rgba(11, 44, 107, .18);
 }
-body.cancel-culture-part-iii section.sources-section > .sources-heading-wrap > .sources-eyebrow,
-body.cancel-culture-part-iii section.sources-section > .sources-heading-wrap > h2,
-body.cancel-culture-part-iii section.sources-section > .sources-heading-wrap > .sources-heading-deck {
-  display: block !important; float: none !important; position: static !important;
-  width: 100% !important; max-width: none !important; margin-left: auto !important; margin-right: auto !important;
-  text-align: center !important;
-}
-body.cancel-culture-part-iii section.sources-section > .sources-intro {
-  display: block !important; float: none !important; position: relative !important;
-  width: min(100%, 1080px) !important; max-width: 1080px !important;
-  margin: 0 auto 3.5rem !important; padding: clamp(1.25rem, 2.6vw, 2.25rem) !important;
-  box-sizing: border-box !important; background: #f8f6f0 !important;
-  border: 3px solid #cfa74a !important; border-left: 3px solid #cfa74a !important;
-  box-shadow: none !important; text-align: center !important;
-}
-body.cancel-culture-part-iii section.sources-section > .sources-intro > p,
-body.cancel-culture-part-iii section.sources-section > .sources-intro > .sources-note-inline {
-  display: block !important; float: none !important; width: 100% !important; max-width: 900px !important;
-  margin: 0 auto 1rem !important; text-align: center !important;
-}
-body.cancel-culture-part-iii section.sources-section > .sources-intro > .sources-note-inline {
-  margin-top: .85rem !important; padding-top: .85rem !important; border-top: 1px solid rgba(207,167,74,.45) !important;
-}
-body.cancel-culture-part-iii .source-section-block--visual .visual-credit-panel {
-  background: #f8f6f0 !important; color: #26364b !important;
-  border: 2px solid #cfa74a !important; border-left: 5px solid #cfa74a !important; box-shadow: none !important;
-}
-body.cancel-culture-part-iii .source-section-block--visual .visual-credit-panel h4 { color: #0b2c6b !important; text-align: center !important; }
-body.cancel-culture-part-iii .source-section-block--visual .visual-credit-panel p,
-body.cancel-culture-part-iii .source-section-block--visual .visual-credit-panel .copyright-credit { color: #26364b !important; opacity: 1 !important; }
-body.cancel-culture-part-iii .source-section-block--visual .visual-credit-panel p { max-width: none !important; text-align: left !important; }
-body.cancel-culture-part-iii .source-section-block--visual .visual-credit-panel .copyright-credit { border-top: 1px solid rgba(207,167,74,.45) !important; }
-body.cancel-culture-part-iii .source-entry {
-  border: 2px solid #cfa74a !important; border-top: 4px solid #cfa74a !important; background: #f8f6f0 !important;
-}
-body.cancel-culture-part-iii .source-entry:hover { border-color: #0b2c6b !important; border-top-color: #cfa74a !important; }
 @media (max-width: 800px) {
-  body.cancel-culture-part-iii section.sources-section > .sources-heading-wrap,
-  body.cancel-culture-part-iii section.sources-section > .sources-intro { width: 100% !important; }
+  body.cancel-culture-part-iii .about-author {
+    border-width: 2px;
+  }
+  body.cancel-culture-part-iii .about-author-image img {
+    border-width: 3px !important;
+  }
 }
