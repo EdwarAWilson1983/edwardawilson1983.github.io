@@ -155,7 +155,7 @@
 (function(){
  const article=document.querySelector('#part-iii');
  const toc=document.querySelector('#toc');
- if(article&&toc){ article.querySelectorAll('h2[id],h3[id]').forEach(h=>{const label=h.textContent.trim(); if(!label || label==='?') return; const a=document.createElement('a');a.href='#'+h.id;a.textContent=label;a.className=h.tagName.toLowerCase();toc.appendChild(a);}); }
+ if(article&&toc){ article.querySelectorAll('h2[id],h3[id]').forEach(h=>{const label=h.textContent.trim(); if(!label || label==='?') return; const a=document.createElement('a');a.href='#'+h.id;a.textContent=label;a.className=h.tagName.toLowerCase();toc.appendChild(a);}); const extras=[{id:'research-note',label:'Research & Sources',className:'h2'},{id:'about-author',label:'About the Author',className:'h2'}]; extras.forEach(item=>{if(document.getElementById(item.id)){const a=document.createElement('a');a.href='#'+item.id;a.textContent=item.label;a.className=item.className;toc.appendChild(a);}}); }
  const p=document.getElementById('progress');
  function update(){const d=document.documentElement;const max=d.scrollHeight-d.clientHeight; if(p)p.style.width=(max>0?(d.scrollTop/max)*100:0)+'%';}
  window.addEventListener('scroll',update,{passive:true});update();
