@@ -64,12 +64,6 @@
 
 </style>
 
-
-<style id="sidebar-source-stop-fix">
-/* Keep the contents sidebar sticky through the essay, but stop it before Research & Sources. */
-.page{position:relative}
-.sidebar.sidebar-stopped{position:absolute!important;}
-</style>
 </head>
 <body>
 <div class="progress-container"><div id="progress"></div></div>
@@ -584,41 +578,4 @@ We didn't.</p>
 <button aria-label="Back to top" id="top"><i class="fa-solid fa-arrow-up-long"></i></button>
 <script src="cancel-culture.js"></script>
 <div class="lightbox" id="lightbox"><img alt="Expanded Image" id="lightbox-image" src=""/></div>
-
-<script id="sidebar-source-stop-script">
-(function(){
-  const sidebar = document.querySelector('.sidebar');
-  const page = document.querySelector('.page');
-  const sources = document.querySelector('#research-note');
-  if (!sidebar || !page || !sources) return;
-  const gap = 24;
-  let ticking = false;
-  function updateSidebarStop(){
-    ticking = false;
-    if (window.matchMedia('(max-width: 900px)').matches) {
-      sidebar.classList.remove('sidebar-stopped');
-      sidebar.style.top = '';
-      return;
-    }
-    const pageTop = page.getBoundingClientRect().top + window.scrollY;
-    const sourceTop = sources.getBoundingClientRect().top + window.scrollY;
-    const sidebarHeight = sidebar.getBoundingClientRect().height;
-    const stickyTop = 24;
-    const shouldStop = window.scrollY + stickyTop + sidebarHeight >= sourceTop - gap;
-    if (shouldStop) {
-      sidebar.classList.add('sidebar-stopped');
-      sidebar.style.top = Math.max(0, sourceTop - pageTop - sidebarHeight - gap) + 'px';
-    } else {
-      sidebar.classList.remove('sidebar-stopped');
-      sidebar.style.top = '';
-    }
-  }
-  function requestUpdate(){ if(!ticking){ticking=true; window.requestAnimationFrame(updateSidebarStop);} }
-  window.addEventListener('scroll', requestUpdate, {passive:true});
-  window.addEventListener('resize', requestUpdate);
-  window.addEventListener('load', requestUpdate);
-  if ('ResizeObserver' in window) new ResizeObserver(requestUpdate).observe(sources);
-  requestUpdate();
-})();
-</script>
 </body></html>
