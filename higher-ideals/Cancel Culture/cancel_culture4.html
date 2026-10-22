@@ -573,9 +573,38 @@ We didn't.</p>
     </div>
   </section>
 </section>
-<section class="about-author"><div class="about-author-photo"><img alt="Edward A. Wilson" src="../images/about_the_author.png"/></div><div class="about-author-content"><div class="about-author-label">ABOUT THE<br/>AUTHOR</div><h2>Edward A. Wilson</h2><p class="author-title">Founder &amp; Editor,<br/><em>Higher Ideals</em></p><p>Edward A. Wilson is the founder and editor of <em>Higher Ideals</em>, an independent publication exploring American history, political institutions, and civic culture.</p></div></section>
+<section class="about-author" id="about-the-author"><div class="about-author-photo"><img alt="Edward A. Wilson" src="../images/about_the_author.png"/></div><div class="about-author-content"><div class="about-author-label">ABOUT THE<br/>AUTHOR</div><h2>Edward A. Wilson</h2><p class="author-title">Founder &amp; Editor,<br/><em>Higher Ideals</em></p><p>Edward A. Wilson is the founder and editor of <em>Higher Ideals</em>, an independent publication exploring American history, political institutions, and civic culture.</p></div></section>
 <footer class="site-footer"><div class="footer-content"><h2>Higher Ideals</h2><p>Essays &amp; Commentary on American History, Ideas, and Institutions</p><hr/><p>© 2026 Edward A. Wilson</p></div></footer>
 <button aria-label="Back to top" id="top"><i class="fa-solid fa-arrow-up-long"></i></button>
 <script src="cancel-culture.js"></script>
+<script>
+(function () {
+  function ensureSidebarLinks() {
+    const toc = document.getElementById('toc');
+    if (!toc) return;
+    const requiredLinks = [
+      { href: '#research-note', label: 'Research & Sources' },
+      { href: '#about-the-author', label: 'Edward A. Wilson' }
+    ];
+    requiredLinks.forEach(function (item) {
+      const exists = Array.from(toc.querySelectorAll('a')).some(function (a) {
+        return a.getAttribute('href') === item.href;
+      });
+      if (!exists) {
+        const link = document.createElement('a');
+        link.href = item.href;
+        link.textContent = item.label;
+        link.className = 'toc-link';
+        toc.appendChild(link);
+      }
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', ensureSidebarLinks);
+  } else {
+    ensureSidebarLinks();
+  }
+})();
+</script>
 <div class="lightbox" id="lightbox"><img alt="Expanded Image" id="lightbox-image" src=""/></div>
 </body></html>
