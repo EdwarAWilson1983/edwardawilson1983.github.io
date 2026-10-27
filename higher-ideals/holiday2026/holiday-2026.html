@@ -57,6 +57,34 @@
   .author-portrait { width: 124px !important; height: 100px !important; }
 }
 </style>
+
+<style id="holiday-author-card-v3">
+/* Holiday author card styled to match the larger Higher Ideals profile card reference. */
+#about-the-author .author-card {
+  display: flex !important; align-items: center !important; gap: 30px !important;
+  width: min(100%, 900px) !important; box-sizing: border-box !important;
+  margin: 0 auto !important; padding: 34px 36px !important;
+  background: #f4ecd5 !important; border: 1px solid #e7cf8a !important;
+  border-radius: 24px !important; box-shadow: 0 14px 34px rgba(25, 35, 48, .10) !important;
+  text-align: left !important;
+}
+#about-the-author .author-portrait {
+  display: block !important; flex: 0 0 250px !important;
+  width: 250px !important; height: 250px !important; max-width: none !important;
+  box-sizing: border-box !important; object-fit: cover !important; object-position: center center !important;
+  border-radius: 50% !important; border: 5px solid #cfa74a !important;
+  background: #f8f6f0 !important; box-shadow: 0 8px 20px rgba(0,0,0,.16) !important;
+}
+#about-the-author .author-copy { flex: 1 1 auto !important; min-width: 0 !important; }
+#about-the-author .author-copy p { text-align: left !important; margin: 0 0 14px !important; }
+#about-the-author .author-copy p:last-child { margin-bottom: 0 !important; }
+@media (max-width: 760px) {
+  #about-the-author .author-card { flex-direction: column !important; align-items: center !important; gap: 22px !important; padding: 26px 22px !important; }
+  #about-the-author .author-portrait { flex-basis: auto !important; width: 205px !important; height: 205px !important; }
+  #about-the-author .author-copy { width: 100% !important; }
+}
+</style>
+
 </head>
 <body id="top">
 <div class="progress-container"><div id="progress"></div></div>
