@@ -5,296 +5,171 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Edward A. Wilson | Public Affairs</title>
+<meta name="description" content="Edward A. Wilson — public affairs, civic engagement, political communication, and public service.">
 
 <style>
-
 :root{
---navy:#081633;
---navy2:#10234f;
---gold:#d4af37;
---white:#ffffff;
---light:#d9dde7;
---accent-red:#9e1b32;
+  --navy:#081633;
+  --navy2:#10234f;
+  --navy3:#142d5b;
+  --gold:#d4af37;
+  --gold-light:#f0d778;
+  --white:#fff;
+  --light:#d9e1ef;
+  --red:#9e1b32;
+  --cream:#f5f2ea;
 }
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
 body{
-font-family:Segoe UI, Arial, sans-serif;
-background:var(--navy);
-color:white;
-line-height:1.7;
+  position:relative;isolation:isolate;min-height:100vh;
+  font-family:Inter,"Segoe UI",Arial,sans-serif;
+  background:var(--navy);color:var(--white);line-height:1.7;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden
 }
-
+body:before{
+  content:"";position:absolute;z-index:-1;inset:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 72% 12% at 48% 2%,rgba(42,78,145,.55) 0%,rgba(42,78,145,0) 78%),
+    radial-gradient(ellipse 55% 10% at 5% 25%,rgba(31,65,132,.34) 0%,rgba(31,65,132,0) 78%),
+    radial-gradient(ellipse 58% 12% at 96% 48%,rgba(38,69,137,.32) 0%,rgba(38,69,137,0) 78%),
+    radial-gradient(ellipse 62% 12% at 12% 73%,rgba(32,64,128,.34) 0%,rgba(32,64,128,0) 78%),
+    radial-gradient(ellipse 72% 12% at 48% 99%,rgba(36,66,120,.4) 0%,rgba(36,66,120,0) 78%)
+}
+a{color:inherit}
 nav{
-position:fixed;
-top:0;
-width:100%;
-background:rgba(8,22,51,.95);
-padding:20px 40px;
-z-index:1000;
-border-bottom:1px solid rgba(212,175,55,.25);
+  position:sticky;top:0;width:100%;z-index:1000;
+  background:rgba(8,22,51,.94);backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(212,175,55,.48);
+  box-shadow:0 4px 24px rgba(0,0,0,.16);
 }
-
+nav:after{content:"";display:block;height:2px;background:linear-gradient(90deg,var(--red) 0 13%,var(--gold) 13% 100%)}
 .nav-container{
-display:flex;
-justify-content:space-between;
-align-items:center;
-max-width:1200px;
-margin:auto;
+  display:flex;justify-content:space-between;align-items:center;gap:28px;
+  max-width:1280px;margin:auto;padding:15px 34px
 }
-
-.logo{
-font-weight:700;
-font-size:1.2rem;
-color:var(--gold);
-}
-
-.nav-links{
-display:flex;
-gap:25px;
-}
-
+.logo{font-weight:800;font-size:1.15rem;letter-spacing:.01em;color:var(--gold-light);white-space:nowrap}
+.nav-links{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:8px 24px}
 .nav-links a{
-color:white;
-text-decoration:none;
-font-weight:600;
-transition:.3s;
+  color:#f7f8fc;text-decoration:none;font-size:.94rem;font-weight:650;
+  padding:7px 0;position:relative;transition:color .2s ease
 }
-
-.nav-links a:hover{
-color:var(--accent-red);
-transition:.3s;
-}
-
-
+.nav-links a:after{content:"";position:absolute;left:0;right:100%;bottom:2px;height:2px;background:var(--red);transition:right .2s ease}
+.nav-links a:hover,.nav-links a:focus-visible{color:var(--gold-light)}
+.nav-links a:hover:after,.nav-links a:focus-visible:after{right:0}
 .hero{
-min-height:120vh;
-background:
-linear-gradient(
-rgba(8,22,51,.55),
-rgba(8,22,51,.55)
-),
-url('images/penn-state-hero.jpg');
-background-size:cover;
-background-position:center;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:20px;
+  min-height:calc(100vh - 70px);position:relative;isolation:isolate;
+  display:flex;align-items:center;justify-content:center;text-align:center;
+  padding:76px 24px 82px;overflow:hidden;
+  background:
+    linear-gradient(180deg,rgba(5,15,37,.40),rgba(8,22,51,.62)),
+    url('images/penn-state-hero.jpg') center 42%/cover no-repeat;
+  border-bottom:1px solid rgba(212,175,55,.25)
 }
-
-.hero-content{
-max-width:900px;
-}
-
+ .hero:before{content:"";position:absolute;inset:0;z-index:-1;background:
+  radial-gradient(ellipse 70% 58% at 18% 24%,rgba(48,88,157,.24) 0%,rgba(48,88,157,0) 76%),
+  radial-gradient(ellipse 66% 56% at 84% 68%,rgba(34,66,128,.23) 0%,rgba(34,66,128,0) 76%),
+  linear-gradient(180deg,rgba(8,22,51,.08),rgba(8,22,51,.28))}
+.hero-content{width:min(100%,980px);margin:auto}
+.eyebrow{font-size:.78rem;text-transform:uppercase;letter-spacing:.22em;font-weight:800;color:var(--gold-light)}
 .hero h1{
-font-size:4.5rem;
-margin-bottom:15px;
-text-shadow:
-1px 1px 0 var(--gold),
-2px 2px 8px rgba(0,0,0,.4);
+  margin:12px 0 0;font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(2.8rem,6.2vw,5rem);line-height:1.08;letter-spacing:-.025em;
+  text-shadow:0 3px 22px rgba(0,0,0,.56)
 }
-
-.gold-line{
-width:220px;
-height:4px;
-background:var(--gold);
-margin:25px auto;
-}
-
-.tagline{
-font-size:2rem;
-font-weight:700;
-margin-bottom:20px;
-}
-
-.hero-subtitle{
-    font-size:1.2rem;
-    color:white;
-    margin-bottom:35px;
-}
-
-.hero-credential-line{
-margin-top:20px;
-font-weight:700;
-font-size:1.15rem;
-color:var(--white);
-}
-
-.hero-secondary-line{
-margin-top:12px;
-font-size:.90rem;
-color:rgba(255,255,255,.8);
-font-weight:500;
-letter-spacing:.5px;
-}
-
+.gold-line{width:150px;height:3px;background:var(--gold);margin:25px auto;position:relative}
+.gold-line:after{content:"";position:absolute;left:50%;transform:translateX(-50%);top:0;width:38px;height:3px;background:var(--red)}
+.tagline{font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.5rem,3vw,2.15rem);font-weight:700;margin-bottom:15px}
+.hero-accent-line{width:92px;height:3px;background:var(--red);margin:14px auto 22px;border-radius:2px}
+.hero-subtitle{font-size:clamp(1.02rem,2vw,1.22rem);color:#f4f6fb;max-width:760px;margin:0 auto 22px}
+.hero-credential-line{margin-top:18px;font-weight:750;font-size:1.04rem;color:var(--gold-light)}
+.hero-secondary-line{margin-top:7px;font-size:.9rem;color:rgba(255,255,255,.82);letter-spacing:.025em}
 .hero-photo{
-display:block;
-width:400px;
-max-width:90%;
-margin:65px auto 15px auto;
-
-border-radius:15px;
-
-border-left:6px solid var(--gold);
-border-top:2px solid rgba(158,27,50,.75);
-border-right:2px solid rgba(158,27,50,.75);
-border-bottom:2px solid rgba(158,27,50,.75);
-
-box-shadow:0 0 20px rgba(0,0,0,.35);
+  display:block;width:clamp(150px,21vw,220px);aspect-ratio:1;object-fit:cover;
+  margin:34px auto 0;border-radius:50%;
+  border:3px solid var(--gold);outline:1px solid rgba(255,255,255,.65);outline-offset:5px;
+  box-shadow:0 12px 35px rgba(0,0,0,.38)
 }
-  
-.hero-credentials{
-margin-top:105px;
-font-weight:600;
-color:var(--gold);
-text-shadow:
-1px 1px 3px rgba(255,255,255,.25);
-}
-
-.hero-accent-line{
-    width:230px;
-    height:3px;
-    background:#9e1b32;
-    margin:10px auto 25px auto;
-    border-radius:2px;
-}
-
-.button-group{
-margin-top:35px;
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:15px;
-}
-
+.hero-credentials{margin-top:22px;font-weight:700;color:var(--gold-light);letter-spacing:.035em}
+.button-group{margin-top:28px;display:flex;justify-content:center;flex-wrap:wrap;gap:13px}
 .btn{
-background:var(--gold);
-color:black;
-padding:14px 22px;
-border-radius:8px;
-text-decoration:none;
-font-weight:700;
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  background:var(--gold);color:#081633;padding:12px 22px;border-radius:7px;
+  border:1px solid var(--gold);text-decoration:none;font-weight:800;
+  box-shadow:0 6px 18px rgba(0,0,0,.18);transition:transform .2s,background .2s,border-color .2s
 }
-
-.btn:hover{
-opacity:.9;
-}
-
-section{
-padding:90px 25px;
-}
-
-.container{
-max-width:1200px;
-margin:auto;
-}
-
+.btn:hover,.btn:focus-visible{transform:translateY(-2px);background:var(--gold-light);border-color:var(--gold-light)}
+.btn-secondary{background:rgba(8,22,51,.5);color:#fff;border-color:var(--gold)}
+.btn-secondary:hover,.btn-secondary:focus-visible{background:rgba(158,27,50,.24);border-color:var(--red);color:#fff}
+section{padding:clamp(58px,8vw,94px) 25px}
+.container{max-width:1160px;margin:auto}
+.section-kicker{display:flex;align-items:center;gap:12px;justify-content:center;color:var(--gold-light);font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;font-weight:800;margin-bottom:10px}
+.section-kicker:before,.section-kicker:after{content:"";height:1px;width:30px;background:var(--gold)}
 .section-title{
-font-size:2.5rem;
-margin-bottom:40px;
-text-align:center;
+  font-family:Georgia,"Times New Roman",serif;font-size:clamp(2rem,4vw,2.8rem);
+  line-height:1.2;margin-bottom:30px;text-align:center;font-weight:500
 }
-
-.about-grid{
-display:grid;
-grid-template-columns:400px 1fr;
-gap:40px;
-align-items:start;
-}
-
-.about-grid img{
-width:100%;
-border-radius:15px;
-border:3px solid var(--gold);
-}
-
 .card{
-background:var(--navy2);
-padding:35px;
-border-radius:15px;
-
-border:2px solid rgba(158,27,50,.75);
-border-left:6px solid var(--gold);
+  position:relative;overflow:hidden;
+  background:linear-gradient(135deg,rgba(20,45,91,.94),rgba(8,22,51,.94));
+  padding:clamp(25px,4vw,42px);border-radius:13px;
+  border:1px solid rgba(212,175,55,.62);border-left:4px solid var(--red);
+  box-shadow:0 16px 38px rgba(0,0,0,.14)
 }
-
+.card:before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--gold)}
+.card p{max-width:980px;margin:0 auto 15px;color:#f1f4fa;font-size:1.04rem}
+.card p:last-child{margin-bottom:0}
+.card strong{color:var(--gold-light)}
+#why{position:relative}
 footer{
-padding:40px;
-text-align:center;
-border-top:1px solid rgba(212,175,55,.25);
+  position:relative;padding:26px 24px 30px;text-align:center;
+  border-top:3px solid var(--gold);color:rgba(255,255,255,.8);
+  font-size:.86rem;letter-spacing:.06em;background:rgba(5,15,37,.24)
 }
-
+footer:before{content:"";position:absolute;top:-3px;left:calc(50% - 34px);width:68px;height:3px;background:var(--red)}
+:focus-visible{outline:2px solid var(--gold-light);outline-offset:4px}
 @media(max-width:900px){
-
-.hero h1{
-font-size:3rem;
+  .nav-container{flex-direction:column;gap:8px;padding:12px 20px}
+  .nav-links{justify-content:center;gap:5px 18px}
+  .hero{min-height:auto;padding:68px 20px 72px}
 }
-
-.tagline{
-font-size:1.5rem;
-font-weight:700;
-margin-bottom:20px;
-text-shadow:
-1px 1px 0 var(--gold),
-2px 2px 8px rgba(0,0,0,.4);
+@media(max-width:560px){
+  .nav-links{gap:4px 13px}
+  .nav-links a{font-size:.86rem}
+  .logo{font-size:1.05rem}
+  .hero{padding:54px 18px 60px}
+  .hero-secondary-line{font-size:.82rem}
+  .hero-photo{width:158px}
+  section{padding:54px 17px}
+  .card{padding:24px 21px}
+  .card p{font-size:1rem}
 }
-
-.about-grid{
-grid-template-columns:1fr;
-}
-
-.nav-container{
-flex-direction:column;
-gap:10px;
-}
-
-.nav-links{
-flex-wrap:wrap;
-justify-content:center;
-}
-}
-
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 </style>
 </head>
 
 <body>
 
 <nav>
-
-<div class="nav-container">
-
-<div class="logo">
-Edward A. Wilson
-</div>
-
-<div class="nav-links">
-<a href="about.html">About</a>
-<a href="journey.html">Journey</a>
-<a href="principles.html">Principles</a>  
-<a href="projects.html">Projects</a>
-<a href="contact.html">Contact</a>
-<a href="higher-ideals/higherideals.html">Higher Ideals</a> 
-</div>
-</div>
-
-</div>
-
+  <div class="nav-container">
+    <a class="logo" href="index.html" style="text-decoration:none">Edward A. Wilson</a>
+    <div class="nav-links">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="about.html">About</a>
+      <a href="journey.html">Journey</a>
+      <a href="principles.html">Principles</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="higher-ideals/higherideals.html">Higher Ideals</a>
+    </div>
+  </div>
 </nav>
 
 <section class="hero">
 
 <div class="hero-content">
+
+<div class="eyebrow">Public Affairs · Civic Engagement · Public Service</div>
 
 <h1>Edward A. Wilson</h1>
 
@@ -308,10 +183,6 @@ Study. Engage. Serve.
 
 <div class="hero-subtitle">
 Building a Foundation in Public Affairs, Civic Engagement, and Public Service.
-</div>
-
-<div class="button-group" style="margin-top:-15px; margin-bottom:25px;">
-<a class="btn" href="documents/Edward_A_Wilson_Resume.pdf" target="_blank" rel="noopener noreferrer">VIEW MY RESUME</a>
 </div>
 
 <div class="hero-credential-line">
@@ -332,6 +203,10 @@ Research • Communication • Initiative • Determination
 </div>
 
 <div class="button-group">
+
+<a class="btn" href="EAW_Political_Resume_Final.pdf" target="_blank" rel="noopener noreferrer">
+VIEW MY RESUME
+</a>
 
 <a class="btn"
 href="https://www.linkedin.com/in/edward-a-wilson-0446a838/"
@@ -366,19 +241,13 @@ Why I do This
 My interest in politics did not begin in a classroom.
 </p>
 
-<br>
-
 <p>
 It began with a belief that government matters because the decisions made by public institutions affect the lives of ordinary people every day.
 </p>
 
-<br>
-
 <p>
 Returning to higher education was never simply about earning a degree. It was about understanding the institutions, ideas, and policies that shape our communities and our country.
 </p>
-
-<br>
 
 <p>
 For many people, leaving college would have been the end of the story.
@@ -390,13 +259,9 @@ For me, it became unfinished business.
 </strong>
 </p>
 
-<br>
-
 <p>
 Completing my Political Science degree was not the conclusion of a journey. It was the beginning of a new chapter focused on public affairs, civic engagement, policy discussion, and public service.
 </p>
-
-<br>
 
 <p>
 I believe informed citizens strengthen democracy, thoughtful debate improves public life, and meaningful change requires both participation and persistence.
