@@ -26,12 +26,10 @@
 
 body{
     background:
-    linear-gradient(
-    180deg,
-    var(--navy) 0%,
-    #0d1c40 50%,
-    var(--navy) 100%
-    );
+    radial-gradient(ellipse at 50% 12%, rgba(37,75,137,.30) 0%, rgba(16,35,79,.13) 34%, transparent 68%),
+    radial-gradient(ellipse at 12% 58%, rgba(28,58,111,.17) 0%, transparent 52%),
+    linear-gradient(180deg, #081633 0%, #0d1c40 48%, #081633 100%);
+    background-attachment:fixed;
 
     color:var(--white);
     font-family:Segoe UI, Arial, sans-serif;
@@ -46,10 +44,11 @@ nav{
     position:fixed;
     top:0;
     width:100%;
-    background:rgba(8,22,51,.95);
-    padding:20px 40px;
+    background:rgba(8,22,51,.96);
+    padding:14px 28px;
     z-index:1000;
-    border-bottom:1px solid rgba(212,175,55,.25);
+    border-bottom:1px solid rgba(212,175,55,.45);
+    backdrop-filter:blur(12px);
 }
 
 .nav-container{
@@ -303,6 +302,31 @@ nav{
 
 }
 
+
+@media(max-width:900px){
+    nav{padding:12px 18px}
+    .nav-container{gap:10px;flex-direction:column}
+    .nav-links{justify-content:center;gap:8px 17px}
+    .journey-hero{padding:170px 20px 85px}
+    .journey-hero h1{font-size:3.2rem}
+    .section{padding:62px 22px}
+    .section-title{font-size:2.15rem}
+    .section-divider{max-width:75%;width:350px}
+}
+@media(max-width:560px){
+    .logo{font-size:1.08rem}
+    .nav-links{gap:7px 13px}
+    .nav-links a{font-size:.84rem}
+    .journey-hero{padding:185px 18px 68px}
+    .journey-hero h1{font-size:2.55rem}
+    .journey-hero p{font-size:1rem}
+    .section{padding:48px 17px}
+    .card{padding:25px 22px}
+    .card-grid{grid-template-columns:1fr}
+    .timeline-item{padding-right:12px}
+    .cta{padding:70px 18px}
+}
+
 </style>
 
 </head>
@@ -311,18 +335,17 @@ nav{
 
 <nav>
 <div class="nav-container">
-<div class="logo">
-Edward A. Wilson
-</div>
+<a class="logo" href="index.html">Edward A. Wilson</a>
 <div class="nav-links">
 <a href="index.html">Home</a>
 <a href="about.html">About</a>
+<a href="journey.html" aria-current="page">Journey</a>
 <a href="principles.html">Principles</a>
 <a href="projects.html">Projects</a>
 <a href="contact.html">Contact</a>
+<a href="higher-ideals/higherideals.html">Higher Ideals</a>
 </div>
 </div>
-
 </nav>
 
 <section class="journey-hero">
@@ -491,15 +514,21 @@ This website serves as a central hub for my work, interests, and ongoing project
 
 <p>
 The Pamphleteer Podcast is an independent public affairs project focused on political history, civic education, and democratic institutions. Through research-driven episodes, I explore the events, ideas, and people that continue to shape American government and public life. The project combines historical analysis, communication, and storytelling while making complex political topics accessible to broader audiences.
+</p>
 
 </div>
 
 <div class="card">
 
-<h3>Future Blog</h3>
+<h3>Higher Ideals</h3>
 
 <p>
-I am developing a blog focused on public affairs, political communication, policy issues, and civic engagement. The goal is to provide thoughtful analysis, historical context, and commentary that helps make complex issues more accessible to broader audiences.
+Higher Ideals is an independent publication exploring democracy, public policy, civic engagement, American history, and public service. Through researched essays and historical investigations, it examines the institutions, ideas, and public questions that shape American life.
+</p>
+
+<p>
+The publication is built around intellectual honesty, historical context, and the belief that informed citizens strengthen democratic life. It brings together research, communication, and civic education in a continuing public-facing project.
+</p>
 
 </div>
         
