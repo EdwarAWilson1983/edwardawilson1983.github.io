@@ -7,257 +7,148 @@
 <title>Contact | Edward A. Wilson</title>
 
 <style>
-
 :root{
---navy:#001845;
---navy2:#102a66;
---gold:#d4af37;
---white:#ffffff;
---accent-red:#b22234;
+  --navy:#081633;--navy2:#10234f;--gold:#d4af37;--gold-light:#f0d778;
+  --white:#fff;--light:#d9e1ef;--red:#9e1b32
 }
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
 body{
-font-family:Arial, Helvetica, sans-serif;
-background:var(--navy);
-color:var(--white);
-line-height:1.8;
+  position:relative;isolation:isolate;min-height:100vh;overflow-x:hidden;
+  background:var(--navy);color:var(--white);
+  font-family:Inter,"Segoe UI",Arial,sans-serif;line-height:1.75;
+  -webkit-font-smoothing:antialiased
 }
-
+body:before{
+  content:"";position:absolute;z-index:-1;inset:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 72% 12% at 48% 2%,rgba(42,78,145,.55) 0%,transparent 78%),
+    radial-gradient(ellipse 55% 10% at 5% 25%,rgba(31,65,132,.34) 0%,transparent 78%),
+    radial-gradient(ellipse 58% 12% at 96% 49%,rgba(38,69,137,.32) 0%,transparent 78%),
+    radial-gradient(ellipse 62% 12% at 12% 74%,rgba(32,64,128,.34) 0%,transparent 78%),
+    radial-gradient(ellipse 72% 12% at 48% 99%,rgba(36,66,120,.4) 0%,transparent 78%)
+}
 nav{
-background:rgba(0,24,69,.95);
-border-bottom:1px solid rgba(212,175,55,.25);
+  position:sticky;top:0;z-index:1000;background:rgba(8,22,51,.94);
+  backdrop-filter:blur(14px);border-bottom:1px solid rgba(212,175,55,.48);
+  box-shadow:0 4px 24px rgba(0,0,0,.16)
 }
-
+nav:after{content:"";display:block;height:2px;background:linear-gradient(90deg,var(--red) 0 13%,var(--gold) 13% 100%)}
 .nav-container{
-max-width:1200px;
-margin:auto;
-padding:20px;
-display:flex;
-justify-content:space-between;
-align-items:center;
+  display:flex;justify-content:space-between;align-items:center;gap:28px;
+  max-width:1280px;margin:auto;padding:15px 34px
 }
-
-.logo{
-font-size:1.7rem;
-font-weight:700;
-color:var(--gold);
-}
-
-.nav-links{
-display:flex;
-gap:30px;
-}
-
+.logo{font-weight:800;font-size:1.15rem;color:var(--gold-light);white-space:nowrap;text-decoration:none}
+.nav-links{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:8px 24px}
 .nav-links a{
-color:white;
-text-decoration:none;
-font-weight:600;
-transition:.3s;
+  position:relative;color:#f7f8fc;text-decoration:none;font-size:.94rem;
+  font-weight:650;padding:7px 0;transition:color .2s ease
 }
-
-.nav-links a:hover{
-color:var(--accent-red);
+.nav-links a:after{content:"";position:absolute;left:0;right:100%;bottom:2px;height:2px;background:var(--red);transition:right .2s ease}
+.nav-links a:hover,.nav-links a:focus-visible{color:var(--gold-light)}
+.nav-links a:hover:after,.nav-links a:focus-visible:after{right:0}
+.container{max-width:1080px;margin:auto;padding:clamp(54px,7vw,82px) 25px 82px}
+.page-heading{text-align:center;margin-bottom:20px}
+.eyebrow{
+  display:flex;align-items:center;justify-content:center;gap:12px;
+  color:var(--gold-light);font-size:.76rem;letter-spacing:.2em;
+  text-transform:uppercase;font-weight:800;margin-bottom:10px
 }
-
-.container{
-max-width:1000px;
-margin:auto;
-padding:80px 25px;
-}
-
+.eyebrow:before,.eyebrow:after{content:"";width:30px;height:1px;background:var(--gold)}
 .page-title{
-text-align:center;
-font-size:3rem;
-margin-bottom:20px;
+  font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.5rem,5vw,3.5rem);
+  line-height:1.12;font-weight:500;letter-spacing:-.02em
 }
-
-.gold-line{
-width:220px;
-height:4px;
-background:var(--gold);
-margin:25px auto 40px auto;
-}
-
-.intro{
-text-align:center;
-max-width:800px;
-margin:0 auto 50px auto;
-}
-
+.gold-line{width:150px;height:3px;background:var(--gold);margin:22px auto 0;position:relative}
+.gold-line:after{content:"";position:absolute;left:50%;top:0;transform:translateX(-50%);width:38px;height:3px;background:var(--red)}
+.intro{max-width:800px;margin:0 auto 38px;text-align:center;font-size:1.08rem;color:#f1f4fa}
 .card{
-background:var(--navy2);
-padding:35px;
-border-radius:15px;
-border:2px solid rgba(178,34,34,.75);
-border-left:6px solid var(--gold);
-margin-bottom:35px;
-  
-max-width:900px;
-margin:0 auto 35px auto;
-  
+  position:relative;overflow:hidden;max-width:940px;margin:0 auto 26px;
+  padding:clamp(26px,4vw,40px);border-radius:13px;
+  background:linear-gradient(135deg,rgba(20,45,91,.94),rgba(8,22,51,.94));
+  border:1px solid rgba(212,175,55,.62);border-left:4px solid var(--red);
+  box-shadow:0 14px 34px rgba(0,0,0,.14)
 }
-
+.card:before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--gold)}
 .card h2{
-margin-bottom:20px;
-color:var(--gold);
+  font-family:Georgia,"Times New Roman",serif;font-weight:500;
+  font-size:1.65rem;line-height:1.25;margin-bottom:16px;color:var(--gold-light)
 }
-
-.connect-card{
-text-align:center;
-}
-
-.connect-card p{
-max-width:700px;
-margin-left:auto;
-margin-right:auto;
-}
-
-.connect-card .button-group{
-justify-content:center;
-}
-
+.card p{font-size:1.01rem;line-height:1.8;color:#f1f4fa;margin:0 0 16px}
+.card p:last-child{margin-bottom:0}
 .opportunities{
-columns:2;
-margin-top:15px;
+  columns:2;column-gap:45px;margin:15px 0 0;padding-left:22px;
+  color:#f1f4fa
 }
-
-  
-.opportunities{
-columns:2;
-margin-top:15px;
-}
-
-.opportunities li{
-margin-bottom:10px;
-}
-
-.button-group{
-margin-top:25px;
-display:flex;
-gap:15px;
-flex-wrap:wrap;
-}
-
+.opportunities li{break-inside:avoid;margin:0 0 9px;padding-left:3px}
+.connect-card{text-align:center}
+.connect-card p{max-width:720px;margin-left:auto;margin-right:auto}
+.email-link{color:var(--gold-light);font-weight:750;text-decoration:none;border-bottom:1px solid rgba(212,175,55,.6)}
+.email-link:hover{color:#fff;border-color:var(--red)}
+.button-group{display:flex;justify-content:center;flex-wrap:wrap;gap:13px;margin-top:25px}
 .btn{
-background:var(--gold);
-color:black;
-padding:12px 20px;
-border-radius:8px;
-text-decoration:none;
-font-weight:700;
-display:inline-block;
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:12px 22px;border-radius:7px;background:var(--gold);color:#081633;
+  border:1px solid var(--gold);text-decoration:none;font-weight:800;
+  box-shadow:0 6px 18px rgba(0,0,0,.18);transition:transform .2s,background .2s,border-color .2s
 }
-
-.btn:hover{
-opacity:.9;
-}
-
-.contact-form{
-display:flex;
-flex-direction:column;
-gap:15px;
-}
-
-.contact-form input,
-.contact-form textarea{
-padding:14px;
-border-radius:8px;
-border:none;
-font-size:1rem;
-}
-
-.contact-form textarea{
-min-height:180px;
-resize:vertical;
-}
-
+.btn:hover,.btn:focus-visible{transform:translateY(-2px);background:var(--gold-light);border-color:var(--gold-light)}
+.btn-secondary{background:rgba(8,22,51,.5);color:#fff;border-color:var(--gold)}
+.btn-secondary:hover,.btn-secondary:focus-visible{background:rgba(158,27,50,.24);border-color:var(--red);color:#fff}
 .quote{
-text-align:center;
-font-style:italic;
-font-size:1.55rem;
-color:var(--gold);
-line-height:1.7;
-margin-top:30px;
+  max-width:900px;margin:54px auto 28px;padding:0 25px;text-align:center;
+  font-family:Georgia,"Times New Roman",serif;font-style:italic;
+  font-size:clamp(1.3rem,2.5vw,1.8rem);line-height:1.65;color:var(--gold-light)
 }
-
-.quote-author{
-display:block;
-margin-top:15px;
-font-size:1rem;
-font-style:normal;
-color:white;
-}
-
-.tagline{
-text-align:center;
-margin-top:25px;
-font-weight:600;
-letter-spacing:2px;
-color:rgba(255,255,255,.85);
-}
-
+.quote:before{content:"";display:block;width:70px;height:2px;background:var(--red);margin:0 auto 23px}
+.quote-author{display:block;margin-top:12px;font-family:Inter,"Segoe UI",Arial,sans-serif;font-style:normal;font-size:.9rem;font-weight:650;color:#fff}
+.tagline{text-align:center;margin:24px 0 0;font-weight:750;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.84);font-size:.83rem}
 footer{
-padding:40px;
-text-align:center;
-border-top:1px solid rgba(212,175,55,.25);
+  position:relative;padding:27px 24px 30px;text-align:center;
+  border-top:3px solid var(--gold);color:rgba(255,255,255,.8);
+  font-size:.86rem;letter-spacing:.06em;background:rgba(5,15,37,.24)
 }
-
-@media(max-width:768px){
-
-.nav-container{
-flex-direction:column;
-gap:15px;
+footer:before{content:"";position:absolute;top:-3px;left:calc(50% - 34px);width:68px;height:3px;background:var(--red)}
+:focus-visible{outline:2px solid var(--gold-light);outline-offset:4px}
+@media(max-width:900px){
+  .nav-container{flex-direction:column;gap:8px;padding:12px 20px}
+  .nav-links{justify-content:center;gap:5px 18px}
 }
-
-.nav-links{
-flex-wrap:wrap;
-justify-content:center;
+@media(max-width:560px){
+  .nav-links{gap:4px 13px}.nav-links a{font-size:.86rem}
+  .logo{font-size:1.05rem}.container{padding:48px 17px 62px}
+  .card{padding:23px 20px}.opportunities{columns:1}
+  .button-group{flex-direction:column}.btn{width:100%}
 }
-
-.opportunities{
-columns:1;
-}
-
-.page-title{
-font-size:2.5rem;
-}
-
-}
-
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 </style>
 </head>
 
 <body>
 
 <nav>
-<div class="nav-container">
-
-<div class="logo">
-Edward A. Wilson
-</div>
-
-<div class="nav-links">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="journey.html">Journey</a>
-<a href="principles.html">Principles</a>
-<a href="projects.html">Projects</a>
-</div>
-
-</div>
+  <div class="nav-container">
+    <a class="logo" href="index.html">Edward A. Wilson</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="journey.html">Journey</a>
+      <a href="principles.html">Principles</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+      <a href="higher-ideals/higherideals.html">Higher Ideals</a>
+    </div>
+  </div>
 </nav>
 
 <section>
 <div class="container">
 
-<h1 class="page-title">Contact Me</h1>
+<div class="page-heading">
+  <div class="eyebrow">Start a Conversation</div>
+  <h1 class="page-title">Contact</h1>
   <div class="gold-line"></div>
+</div>
 
 <p class="intro">
 Whether you're interested in advocacy, public affairs, political communications, civic engagement, or future opportunities, I'd welcome the opportunity to connect.
@@ -307,9 +198,7 @@ Meaningful progress begins with people who are willing to engage seriously, exam
 <br>
 
 <p>
-<p>
 If those values resonate with you, and if that's the kind of conversation you're interested in having, I'd be excited to hear from you.
-</p>
 </p>
 
 </div>
@@ -326,20 +215,20 @@ Interested in connecting? I'd welcome the opportunity to discuss advocacy, publi
 
 <p>
 <strong>Email:</strong><br>
-edwardawilson1983@outlook.com
+<a class="email-link" href="mailto:edwardawilson1983@outlook.com">edwardawilson1983@outlook.com</a>
 </p>
 
 <div class="button-group">
 
 <a class="btn"
 href="https://www.linkedin.com/in/edward-a-wilson-0446a838/"
-target="_blank">
+target="_blank" rel="noopener noreferrer">
 LinkedIn
 </a>
 
 <a class="btn"
 href="documents/Edward_A_Wilson_Resume.pdf"
-target="_blank">
+target="_blank" rel="noopener noreferrer">
 Resume
 </a>
 
