@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Higher Ideals</title>
+
+<style>
+:root{
+--navy:#0b2c6b;
+--gold:#cfa64a;
+--cream:#f5f2ea;
+}
+
+*{box-sizing:border-box;}
+
+body{
+margin:0;
+background:var(--cream);
+font-family:Georgia, serif;
+color:#102a43;
+}
+
+header{
+background:var(--navy);
+color:white;
+padding:20px 40px;
+border-bottom:2px solid var(--gold);
+}
+
+.header-wrap{
+display:flex;
+justify-content:space-between;
+align-items:center;
+max-width:1400px;
+margin:auto;
+}
+
+.brand{
+display:flex;
+align-items:center;
+gap:16px;
+}
+
+.brand img{
+height:70px;
+}
+
+.brand h1{
+margin:0;
+font-size:3rem;
+}
+
+.brand p{
+margin:0;
+color:var(--gold);
+font-style:italic;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:bold;
+}
+
+.hero{
+display:grid;
+grid-template-columns:1fr 1fr;
+max-width:1400px;
+margin:auto;
+}
+
+.hero-text{
+padding:60px;
+}
+
+.hero-text h2{
+font-size:5rem;
+line-height:.9;
+margin-bottom:20px;
+color:var(--navy);
+}
+
+.divider{
+width:140px;
+height:3px;
+background:var(--gold);
+margin:30px 0;
+}
+
+.hero-text p{
+font-size:1.25rem;
+line-height:1.8;
+}
+
+.hero-image{
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.hero-image img{
+width:90%;
+max-width:700px;
+height:auto;
+object-fit:contain;
+display:block;
+margin:auto;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:16px 28px;
+background:var(--navy);
+color:white;
+text-decoration:none;
+border:2px solid var(--gold);
+font-weight:bold;
+}
+
+.cards{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+max-width:1400px;
+margin:auto;
+}
+
+.card{
+position:relative;
+padding:40px;
+min-height:320px;
+border:1px solid rgba(207,166,74,.5);
+overflow:hidden;
+}
+
+.card h3{
+color:var(--gold);
+}
+
+.card h2{
+color:var(--navy);
+}
+
+.watermark{
+position:absolute;
+right:20px;
+bottom:-20px;
+width:320px;
+opacity:.18;
+pointer-events:none;
+}
+
+.quote{
+background:var(--navy);
+color:white;
+text-align:center;
+padding:28px;
+font-size:1.4rem;
+font-style:italic;
+}
+
+@media(max-width:900px){
+.hero,.cards{
+grid-template-columns:1fr;
+}
+.hero-text h2{
+font-size:3rem;
+}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="header-wrap">
+
+<div class="brand">
+<img src="images/seal.png" alt="Seal">
+<div>
+<h1>HIGHER IDEALS</h1>
+<p>Essays & Commentary on American History, Ideas, and Institutions</p>
+</div>
+</div>
+
+<nav>
+<span class="social-links">
+<a href="https://www.facebook.com/profile.php?id=61591726432748" target="_blank" rel="noopener" aria-label="Higher Ideals on Facebook">Facebook</a>
+<a href="https://bsky.app/profile/higherideals.bsky.social" target="_blank" rel="noopener" aria-label="Higher Ideals on Bluesky">Bluesky</a>
+<a href="https://www.linkedin.com/in/edward-a-wilson-0446a838/" target="_blank" rel="noopener" aria-label="Edward A. Wilson on LinkedIn">LinkedIn</a>
+</span>
+
+<a href="higherideals.html">Home</a>
+<a href="essays/hiprinciples.html">Essays</a>
+<a href="#archives">Archives</a>
+<a href="../index.html">eawilson.com</a>
+</nav>
+
+</div>
+</header>
+
+<section class="hero">
+
+<div class="hero-text">
+<h2>HIGHER<br>IDEALS</h2>
+
+<div class="divider"></div>
+
+<p>
+The latest investigation from Higher Ideals continues with Part III: The Divide.
+</p>
+
+<p>
+<strong>Cancel Culture: Why You May Not Know It’s an American Tradition — Part III: The Divide</strong>
+examines how political disagreement can deepen into polarization, delegitimization, and dehumanization—and what happens when opponents stop treating one another as fellow citizens.
+</p>
+
+<a class="btn" href="Cancel%20Culture/cancel_culture3.html">
+READ CANCEL CULTURE — PART III
+</a>
+
+</div>
+
+<div class="hero-image">
+<img src="Cancel%20Culture/cancel-culture-images/Cracked%20America_%20A%20Divided%20Nation.png" alt="Conceptual illustration of a fractured American flag, opposing silhouettes, a protest crowd, and the Capitol.">
+</div>
+
+</section>
+
+<section class="cards">
+
+<div class="card">
+
+<h3>FOUNDING ESSAY</h3>
+
+<h2>The Principles That Shape My Political Philosophy</h2>
+
+<p>
+The founding essay of Higher Ideals, laying out the ideas and principles
+that guide the publication's approach to American history, political thought,
+public policy, and civic engagement.
+</p>
+
+<a class="btn" href="essays/hiprinciples.html">
+
+READ THE FOUNDING ESSAY
+
+</a>
+
+</div>
+
+<div class="card">
+<h3>ABOUT HIGHER IDEALS</h3>
+
+<p>
+Higher Ideals examines the ideas, institutions, and civic traditions that shape American democracy.
+</p>
+
+<ul>
+<li>American History</li>
+<li>Democratic Institutions</li>
+<li>Public Policy</li>
+<li>Civic Engagement</li>
+<li>Political Reform</li>
+</ul>
+
+<p>
+Future essays will explore historical and contemporary questions through research, analysis, and public dialogue.
+</p>
+</div>
+
+<div class="card">
+<h3>ARCHIVES</h3>
+
+<p><strong>2026</strong></p>
+
+<ul class="archive-list">
+
+   <li>
+      <a href="Cancel%20Culture/cancel_culture1.html">
+         Cancel Culture: Why You May Not Know It’s an American Tradition
+      </a>
+   </li>
+
+   <li>
+      <a href="Cancel%20Culture/cancel_culture3.html">
+         Cancel Culture: Why You May Not Know It’s an American Tradition — Part III: The Divide
+      </a>
+   </li>
+
+   <li>
+      <a href="Cancel%20Culture/cancel_culture2.html">
+         Cancel Culture: Why You May Not Know It’s an American Tradition — Part II: The Power / The Present
+      </a>
+   </li>
+
+   <li>
+      <a href="fort-ticonderoga/hiti2.html">
+         Fort Ticonderoga: Why This Place Still Matters
+      </a>
+   </li>
+
+   <li>
+      <a href="fort-ticonderoga/hiti.html">
+         Fort Ticonderoga: A Walk Through Three Centuries of American History
+      </a>
+   </li>
+
+   <li>
+      <a href="america-250/hiamerica250.html">
+         America 250: Yo America! We Did It! (Sort Of)
+      </a>
+   </li>
+
+   <li>
+      <a href="electoral-college/hicollege.html">
+         The Electoral College: An Institution Built for a Different America?
+      </a>
+   </li>
+
+   <li>
+      <a href="essays/hiprinciples.html">
+         The Principles That Shape My Political Philosophy
+      </a>
+   </li>
+
+</ul>
+
+<img class="watermark" src="images/seal-watermark.png" alt="Watermark">
+
+</section>
+
+<div class="quote">
+“Democracy is never a final achievement. It is a call to an untiring effort.” — John F. Kennedy
+</div>
+
+</body>
+</html>
